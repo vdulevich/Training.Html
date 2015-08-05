@@ -47,7 +47,7 @@ a
 .container-1500
 {
 	max-width:1500px;
-	/*min-width:1000px;*/
+	min-width:480px;
 	margin: 0 auto;
 }
 
@@ -60,7 +60,6 @@ a
 .container-1000
 {
 	max-width:1000px;
-	min-width:480px;
 	margin:0px auto;
 }
 
