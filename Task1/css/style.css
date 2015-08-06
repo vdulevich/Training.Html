@@ -72,6 +72,7 @@ a
 	overflow:hidden;
 	display:table;
 	width:100%;
+	padding:15px 10px;
 }
 
 .header-container .header-container-right,
@@ -83,12 +84,11 @@ a
 
 .header-container .header-container-left
 {
-	padding: 10px 0px 0px 10px;
+	padding-left: 10px;
 }
 
 .header-container .header-container-right
 {
-	padding: 15px 0px 5px 0px;
 	text-align:right;
 }
 
@@ -128,7 +128,7 @@ a
 {
 	color:inherit;
 	text-decoration:inherit;
-    padding: 15px 10px;
+    padding: 15px 10px 5px 10px;
     display: inline-block;
 }
 
@@ -145,7 +145,6 @@ a
     text-align: center;
     color: white;
     position: relative;
-	white-space:nowrap;
 }
 
 .banner-control .banner-control-image
@@ -272,25 +271,33 @@ a
 	margin-top:40px;
 }
 
-.portfolio-nav-control-wrap
+.slidenav-control
 {
-	position:relative;
+	display:table;
+}
+
+.slidenav-control > div
+{
+	display:table-cell;
+	vertical-align: middle;
+}
+
+.slidenav-control .slidenav-control-border
+{
+	width:50%;
+}
+
+.slidenav-control .slidenav-control-border > div
+{
 	border-bottom: 1px solid #d9d9d9;
 }
 
-.portfolio-nav-control
+.slidenav-control-buttons
 {
-	margin:0px auto;
-    width: 80px;
-	height: 20px;
-    background-color: white;
-	position:absolute;
-	top: -10px;
-	left:0px;
-	right:0px;
+	width:80px;
 }
 
-.portfolio-nav-control a
+.slidenav-control-buttons a
 {
 	height:20px;
 	width:20px;
@@ -298,12 +305,12 @@ a
 	display:inline-block
 }
 
-.portfolio-nav-control a.right
+.slidenav-control-buttons a.right
 {
 	background-image:url(../images/portfolio-nav-right-bg.png);
 }
 
-.portfolio-nav-control a.left
+.slidenav-control-buttons a.left
 {
 	background-image:url(../images/portfolio-nav-left-bg.png);
 }
