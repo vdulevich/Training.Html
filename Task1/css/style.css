@@ -302,7 +302,8 @@ a
 	height:20px;
 	width:20px;
 	background-repeat:no-repeat;
-	display:inline-block
+	display:inline-block;
+	margin: 0px 4px;
 }
 
 .slidenav-control-buttons a.right
@@ -379,6 +380,11 @@ a
 
 .footer-container
 {
+
+}
+
+.footer-container-item-gray
+{
 	background-color:#637f83;
 	color:white;
 }
@@ -387,11 +393,6 @@ a
 .footer-container .section-title-control .section-title-control-title
 {
 	color:white;
-}
-
-.footer-container .social-container
-{
-	background-color:white;
 }
 
 .designedby-container
