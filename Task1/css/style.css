@@ -156,13 +156,18 @@ a
     background: url(../images/head-menui-tem-bg.png) 50% 0 no-repeat;
 }
 
+.banner-container
+{
+	height: 415px;
+}
+
 .banner-control
 {
     position: relative;
 
     overflow: hidden;
 
-    height: 350px;
+    height: 100%;
 
     text-align: center;
 
@@ -282,8 +287,10 @@ a
     .feature-container > div
     {
         float: none;
-
+		
         width: auto;
+		
+		border: none;
     }
 
     .feature-container .feature-control .feature-control-line
