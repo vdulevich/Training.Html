@@ -102,7 +102,7 @@ a
     text-align: right;
 }
 
-@media only screen and (max-width: 800px)
+@media only screen and (max-width: 480px)
 {
     .header-container .header-container-right,
     .header-container .header-container-left
@@ -282,7 +282,7 @@ a
     font-weight: bold;
 }
 
-@media only screen and (max-width: 800px)
+@media only screen and (max-width: 480px)
 {
     .feature-container > div
     {
@@ -387,7 +387,7 @@ a
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 800px)
+@media only screen and (max-width: 480px)
 {
     .face-container > div
     {
@@ -446,6 +446,11 @@ a
     background-color: #637f83;
 }
 
+.footer-container-item-gray .section-title-control-title
+{
+	color: white;
+}
+
 .subscribe-container
 {
     overflow: hidden;
@@ -464,7 +469,7 @@ a
     padding: 10px;
 }
 
-@media only screen and (max-width: 800px)
+@media only screen and (max-width: 480px)
 {
     .subscribe-container .subscribe-container-item
     {
@@ -481,8 +486,6 @@ a
     min-height: 32px;
     margin-bottom: 13px;
     padding-left: 55px;
-
-    white-space: nowrap;
 
     background: url(../images/subscribe-bg.png) no-repeat;
 }
@@ -559,11 +562,27 @@ a
     padding: 25px 0;
 }
 
-.social-container .social-container-item
+.social-container > div
 {
     float: left;
-
+	box-sizing:border-box;
     width: 33%;
+}
+
+@media only screen and (max-width: 480px)
+{
+    .social-container > div
+    {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: -10em;
+        padding-left: 50%;
+    }
+    .social-container > div:last-child
+    {
+        margin-bottom: 0;
+    }
 }
 
 .social-control
@@ -572,6 +591,8 @@ a
 
     padding: 15px 15px 15px 80px;
 
+	width: 100%;
+
     white-space: nowrap;
 
     color: #637f83;
@@ -579,24 +600,7 @@ a
     background-position: 0 50%;
 }
 
-@media only screen and (max-width: 800px)
-{
-    .social-container .social-container-item
-    {
-        float: none;
-
-        width: 100%;
-        margin-bottom: 20px;
-        margin-left: -10em;
-        padding-left: 50%;
-    }
-    .social-container .social-container-item:last-child
-    {
-        margin-bottom: 0;
-    }
-}
-
-.social-control-title
+.social-control .social-control-title
 {
     font-size: 18px;
     font-weight: bold;
@@ -604,17 +608,17 @@ a
     white-space: nowrap;
 }
 
-.social-control-facebook
+.social-control.social-control-facebook
 {
     background-image: url(../images/social-facebook.png);
 }
 
-.social-control-google
+.social-control.social-control-google
 {
     background-image: url(../images/social-google.png);
 }
 
-.social-control-linkedin
+.social-control.social-control-linkedin
 {
     background-image: url(../images/social-linkedin.png);
 }
