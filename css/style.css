@@ -1,0 +1,624 @@
+@font-face
+{
+    font-family: 'SourceSansPro';
+
+    src: url('../fonts/SourceSansPro-Regular.otf');
+}
+
+.clear-fix::after
+{
+    display: block;
+    clear: both;
+
+    content: '';
+}
+
+body
+{
+    font: 14px SourceSansPro, Arial, Helvetica, sans-serif;
+
+    margin: 0;
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+a
+{
+    cursor: pointer;
+}
+
+.button
+{
+    font-size: 13px;
+    font-weight: bold;
+
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    white-space: nowrap;
+    text-decoration: none;
+
+    color: white;
+    border-radius: 5px;
+    background-color: #637f83;
+}
+
+.button.button-orange
+{
+    background-color: #e4551d;
+}
+
+/* Layout classes */
+
+.container-1500
+{
+    /*max-width: 1500px;*/
+    margin: 0 auto;
+}
+
+.container-1500 > div
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-1000
+{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-container
+{
+    display: table;
+    overflow: hidden;
+
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.header-container .header-container-right,
+.header-container .header-container-left
+{
+    display: table-cell;
+
+    vertical-align: middle;
+}
+
+.header-container .header-container-left
+{
+    padding-left: 10px;
+}
+
+.header-container .header-container-right
+{
+    text-align: right;
+}
+
+@media only screen and (max-width: 480px)
+{
+    .header-container .header-container-right,
+    .header-container .header-container-left
+    {
+        display: block;
+
+        text-align: left;
+    }
+}
+
+.sitename-control
+{
+    font-size: 26px;
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    color: #637f83;
+}
+
+.mainmenu-control
+{
+    font-size: 13px;
+    font-weight: bold;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #637f83;
+}
+
+.mainmenu-control li
+{
+    display: inline-block;
+}
+
+.mainmenu-control li a
+{
+    display: inline-block;
+
+    padding: 15px 10px 5px 10px;
+
+    text-decoration: inherit;
+
+    color: inherit;
+}
+
+.mainmenu-control li a:hover
+{
+    color: #e4551d;
+    background: url(../images/head-menui-tem-bg.png) 50% 0 no-repeat;
+}
+
+.banner-container
+{
+	height: 520px;
+}
+
+.banner-control
+{
+    overflow: hidden;
+    height: 100%;
+    color: white;
+    display: table;
+    width: 100%;
+}
+
+.banner-control-image
+{
+	position: relative;
+}
+
+.banner-control-image img
+{
+	position:absolute;
+}
+
+.banner-control-wrapper 
+{
+	position: relative;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.banner-control-wrapper > div
+{
+    margin: 30px;
+}
+
+.banner-control .banner-control-title
+{
+    font-size: 40px;
+	margin-top:0px;
+    text-decoration: underline;
+}
+
+.banner-control .banner-control-subtitle
+{
+    font-size: 1em;
+
+    text-transform: uppercase;
+}
+
+.banner-control .banner-control-nav
+{
+    display: block;
+
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+
+    border-radius: 50px;
+    background: url(../images/banner-nav-down.png) no-repeat 50% 50% #e4551d;
+}
+
+.section-title-control
+{
+    font-size: 24px;
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+    color: #acb9bb;
+}
+
+.section-title-control .section-title-control-title
+{
+    font-size: 34px;
+    font-weight: bold;
+
+    color: #637f83;
+}
+
+.feature-container
+{
+    overflow: hidden;
+
+    text-align: center;
+
+    background-color: #f6f6f6;
+	
+	display:table;
+}
+
+.feature-container > div
+{
+	display:table-cell;
+	
+    width: 25%;
+
+    border-right: 1px solid #d5d5d5;
+}
+
+.feature-container > div:last-child
+{
+    border: none;
+}
+
+.feature-control
+{
+    padding: 35px 15px;
+
+    text-align: center;
+
+    color: #637f83;
+}
+
+.feature-control .feature-control-line
+{
+    margin: 25px 0;
+}
+
+.feature-control .feature-control-title
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 480px)
+{
+    .feature-container > div
+    {
+        display: block;
+		
+        width: auto;
+		
+		border: none;
+    }
+
+    .feature-container .feature-control .feature-control-line
+    {
+        margin: 10px;
+    }
+
+    .feature-container .feature-control
+    {
+        padding: 15px;
+    }
+}
+
+.portfolio-container
+{
+    padding-bottom: 40px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.portfolio-container .portfolio-container-item
+{
+    margin-top: 40px;
+}
+
+.slidenav-control
+{
+    display: table;
+}
+
+.slidenav-control > div
+{
+    display: table-cell;
+
+    vertical-align: middle;
+}
+
+.slidenav-control .slidenav-control-border
+{
+    width: 50%;
+}
+
+.slidenav-control .slidenav-control-border > div
+{
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.slidenav-control-buttons
+{
+    width: 80px;
+}
+
+.slidenav-control-buttons a
+{
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 4px;
+
+    background-repeat: no-repeat;
+}
+
+.slidenav-control-buttons a.right
+{
+    background-image: url(../images/portfolio-nav-right-bg.png);
+}
+
+.slidenav-control-buttons a.left
+{
+    background-image: url(../images/portfolio-nav-left-bg.png);
+}
+
+.portfolio-img
+{
+    max-width: 100%;
+}
+
+.face-container
+{
+    overflow: hidden;
+
+    padding: 20px 10px;
+
+    color: #637f83;
+}
+
+.face-container > div
+{
+    float: left;
+	
+    width: 50%;
+	
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 480px)
+{
+    .face-container > div
+    {
+        float: none;
+
+        width: auto;
+    }
+}
+
+.face-control
+{
+    line-height: 19px;
+
+    overflow: hidden;
+
+    margin: 20px 0;
+    padding-right: 10px;
+}
+
+.face-control .face-control-photo-crop
+{
+    float: left;
+    overflow: hidden;
+
+    width: 110px;
+	height:110px;
+    margin-right: 15px;
+
+    text-align: center;
+
+    border-radius: 6px;
+}
+
+.face-control .face-control-title
+{
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.face-control .face-control-more
+{
+    padding-left: 5px;
+
+    white-space: nowrap;
+
+    color: #eb8e74;
+}
+
+.footer-container-item-gray
+{
+    color: white;
+    background-color: #637f83;
+}
+
+.footer-container-item-gray .section-title-control-title
+{
+	color: white;
+}
+
+.subscribe-container
+{
+    overflow: hidden;
+
+    padding: 25px 0;
+
+    border-top: 1px solid #597275;
+}
+
+.subscribe-container .subscribe-container-item
+{
+    float: left;
+
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 480px)
+{
+    .subscribe-container .subscribe-container-item
+    {
+        float: none;
+
+        width: auto;
+    }
+}
+
+.subscribe-control
+{
+    font-size: 12px;
+
+    min-height: 32px;
+    margin-bottom: 13px;
+    padding-left: 55px;
+
+    background: url(../images/subscribe-bg.png) no-repeat;
+}
+
+.subscribe-control-title
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.signup-control
+{
+    display: table;
+}
+
+.signup-control .signup-control-cell
+{
+    display: table-cell;
+
+    vertical-align: middle;
+}
+
+.signup-control .signup-control-cell:first-child
+{
+    width: 100%;
+    padding-right: 10px;
+}
+
+.signup-control .signup-control-cell .signup-control-input
+{
+    box-sizing: border-box;
+    width: 100%;
+    height: 35px;
+    padding: 0 8px;
+
+    color: white;
+    border: none;
+    border-radius: 6px;
+    background-color: #597275;
+}
+
+.signup-control .signup-control-cell .button.signup-control-button
+{
+    padding: 10px;
+
+    color: white;
+    background-color: #597275;
+}
+
+.twitter-control
+{
+    font-size: 12px;
+
+    padding: 20px 20px 20px 85px;
+
+    color: #b5c7c9;
+    border-radius: 6px;
+    background: url(../images/twitter-bg.png) no-repeat 15px 20px #597275;
+}
+
+.social-container
+{
+    overflow: hidden;
+
+    padding: 25px 0;
+}
+
+.social-container > div
+{
+    float: left;
+	box-sizing:border-box;
+    width: 33%;
+}
+
+@media only screen and (max-width: 480px)
+{
+    .social-container > div
+    {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: -10em;
+        padding-left: 50%;
+    }
+    .social-container > div:last-child
+    {
+        margin-bottom: 0;
+    }
+}
+
+.social-control
+{
+    overflow: hidden;
+
+    padding: 15px 15px 15px 80px;
+
+	width: 100%;
+
+    white-space: nowrap;
+
+    color: #637f83;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+
+.social-control .social-control-title
+{
+    font-size: 18px;
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+.social-control.social-control-facebook
+{
+    background-image: url(../images/social-facebook.png);
+}
+
+.social-control.social-control-google
+{
+    background-image: url(../images/social-google.png);
+}
+
+.social-control.social-control-linkedin
+{
+    background-image: url(../images/social-linkedin.png);
+}
+
+.designedby-container
+{
+    padding: 30px 10px;
+
+    text-align: center;
+}
