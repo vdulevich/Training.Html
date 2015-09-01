@@ -487,8 +487,12 @@ a
 .subscribe-control
 {
     font-size: 12px;
+	min-height:48px;
+}
 
-    min-height: 32px;
+.subscribe-control-header
+{
+	min-height: 32px;
     margin-bottom: 13px;
     padding-left: 55px;
 
@@ -506,20 +510,14 @@ a
     display: table;
 }
 
-.signup-control .signup-control-cell
-{
-    display: table-cell;
-
-    vertical-align: middle;
-}
-
-.signup-control .signup-control-cell:first-child
+.signup-control .signup-control-input-wrap
 {
     width: 100%;
     padding-right: 10px;
+	display: table-cell;
 }
 
-.signup-control .signup-control-cell .signup-control-input
+.signup-control .signup-control-input
 {
     box-sizing: border-box;
     width: 100%;
@@ -532,12 +530,14 @@ a
     background-color: #597275;
 }
 
-.signup-control .signup-control-cell .button.signup-control-button
+.signup-control .button.signup-control-button
 {
     padding: 10px;
 
     color: white;
     background-color: #597275;
+	
+	display: table-cell;
 }
 
 .twitter-control
@@ -548,7 +548,8 @@ a
 
     color: #b5c7c9;
     border-radius: 6px;
-    background: url(../images/twitter-bg.png) no-repeat 15px 50% #597275;
+    background: url(../images/twitter-bg.png) no-repeat 15px 20px #597275;
+	min-height:48px;
 }
 
 .social-container
