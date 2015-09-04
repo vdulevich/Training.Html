@@ -449,15 +449,14 @@ a
 .subscribe-container
 {
     padding: 25px 15px;
-
+	display:table;
     border-top: 1px solid #597275;
 }
 
 .subscribe-container .subscribe-container-item
 {
-    float: left;
-
-    box-sizing: border-box;
+	vertical-align:bottom;
+	display:table-cell;
     width: 50%;
     padding-right: 10px;
 }
@@ -471,7 +470,7 @@ a
 {
     .subscribe-container .subscribe-container-item
     {
-        float: none;
+        display: block;
 
         width: auto;
 		
@@ -508,6 +507,7 @@ a
 .signup-control
 {
     display: table;
+	width:100%;
 }
 
 .signup-control .signup-control-input-wrap
