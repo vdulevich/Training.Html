@@ -3,11 +3,10 @@
 
 .main-menu-wrap {
 	background-color:#f5c506;
-	width:100%;
 	text-align:right;
 }
 
-.main-menu-wrap--shadow{
+.main-menu-wrap--shadow {
 	margin:8px 0px 0px 8px; 
 	-webkit-box-shadow: -4px -4px 0px 0px rgba(245,197,6,0.48), -8px -8px 0px 0px rgba(245,197,6,0.48);
 	-moz-box-shadow: -4px -4px 0px 0px rgba(245,197,6,0.48), -8px -8px 0px 0px rgba(245,197,6,0.48);
@@ -54,3 +53,23 @@
 .main-menu__item--contacts a {
 	background-image:url(../images/main-menu-item-contacts.png);
 }
+
+@media only screen and (max-width: 940px)
+{
+	.main-menu__item{
+		font-size:19px;
+		padding-right: 10px;
+	}
+	
+	.main-menu__item a {
+		padding-left:40px;
+	}
+	
+	.main-menu-wrap--shadow{
+		margin:0px; 
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;	
+	}
+}
+
