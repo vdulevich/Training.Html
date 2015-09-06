@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+.main-logo{
+	background: 10px 50% no-repeat url(../images/main-logo.png);
+	font: bold 41px 'Segoe WP', Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:white;
+	padding:10px 0px 10px 100px;
+	font-style:italic;
+}
+
+.main-logo__subtitle {
+	font-size:0.3em;
+	font-style:normal;
+}

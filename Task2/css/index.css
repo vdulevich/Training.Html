@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+@import url(main-menu.css);
+@import url(main-logo.css);
+@import url(video-title.css);
+@import url(video-player.css);
+
+@font-face {
+	font-family: 'Segoe WP';
+	src: url('../fonts/SegoeWP.ttf');
+	src: local('SegoeWP'), url('../fonts/SegoeWP.ttf') format('truetype');
+}
+
+body > div {
+	margin:0px auto;	
+}
+
+.header-container {
+	background-image:url(../images/header-bg.jpg);
+	max-width:1300px;
+	padding:28px 140px;
+	box-sizing:border-box;
+	display:table;
+	width:100%;
+}
+
+.header-container__row {
+	display:table-row;
+}
+
+.header-container__row__cell {
+	display:table-cell;
+	width:50%;
+}
+
+.header-container__row__cell--video .header-container__row__cell {
+	vertical-align:middle;
+	text-align:right;
+	padding-top:28px;
+}
+
+
