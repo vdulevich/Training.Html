@@ -14,3 +14,16 @@
 	font-size:0.3em;
 	font-style:normal;
 }
+
+@media only screen and (max-width: 940px)
+{
+	.main-logo {
+		font-size:19px;
+		background: 10px 50% no-repeat url(../images/main-logo-small.png);
+		padding-left:60px;
+	}
+	
+	.main-logo__subtitle{
+		display:none;	
+	}
+}
