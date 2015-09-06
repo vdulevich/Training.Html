@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+.video-title {
+	text-transform:uppercase;
+	text-align:center;
+	display:inline-block;
+	font: 63px 'Segoe WP', Helvetica, sans-serif;
+	color:white;
+}
+
+.video-title__subtitle {
+	color:#f5c506;
+}
