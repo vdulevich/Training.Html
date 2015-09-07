@@ -4,15 +4,12 @@
 @import url(main-logo.css);
 @import url(video-title.css);
 @import url(video-player.css);
+@import url(icon-control.css);
 
 @font-face {
 	font-family: 'Segoe WP';
 	src: url('../fonts/SegoeWP.ttf');
 	src: local('SegoeWP'), url('../fonts/SegoeWP.ttf') format('truetype');
-}
-
-body > div {
-	margin:0px auto;	
 }
 
 .clear-fix::after {
@@ -21,9 +18,14 @@ body > div {
 	clear:both;
 }
 
+.base-container {
+	max-width:1300px;
+	margin:0px auto;
+	overflow:hidden;
+}
+
 .header-container {
 	background-image:url(../images/header-bg.jpg);
-	max-width:1300px;
 	padding:28px 0px;
 	box-sizing:border-box;
 }
@@ -80,5 +82,25 @@ body > div {
 	.header-container-table__row__cell--logo {
 		background-color:#585858;
 	}
+}
+
+.icon-container {
+	background-image:url(../images/icon-container-bg.png);
+	
+}
+
+.icon-container-inner {
+	display:table;
+	width:100%;
+	max-width:1000px;
+	margin:0px auto;
+}
+
+.icon-container__item {
+	padding:40px 0px;
+	width:33%;
+	box-sizing:border-box;
+	display:table-cell;
+	vertical-align:bottom;
 }
 
