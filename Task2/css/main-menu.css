@@ -1,12 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-.main-menu-wrap {
-	background-color:#f5c506;
-	text-align:right;
-}
-
-.main-menu-wrap--shadow {
+.main-menu--shadow {
 	margin:8px 0px 0px 8px; 
 	-webkit-box-shadow: -4px -4px 0px 0px rgba(245,197,6,0.48), -8px -8px 0px 0px rgba(245,197,6,0.48);
 	-moz-box-shadow: -4px -4px 0px 0px rgba(245,197,6,0.48), -8px -8px 0px 0px rgba(245,197,6,0.48);
@@ -65,7 +60,7 @@
 		padding-left:40px;
 	}
 	
-	.main-menu-wrap--shadow{
+	.main-menu--shadow{
 		margin:0px; 
 		-webkit-box-shadow: none;
 		-moz-box-shadow: none;

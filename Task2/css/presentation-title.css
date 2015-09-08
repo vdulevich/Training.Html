@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+.presentation-title {
+	text-transform:uppercase;
+	font: 37px 'Segoe WP', Helvetica, sans-serif;
+	color:white;
+}
+
+.presentation-title--padding {
+	padding:45px 0px;
+}
+
+@media only screen and (max-width: 940px)
+{
+	.presentation-title {
+		display:none;
+	}
+}

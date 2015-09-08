@@ -1,15 +1,29 @@
 @charset "utf-8";
 
+@import url(header-container.css);
 @import url(main-menu.css);
 @import url(main-logo.css);
 @import url(video-title.css);
 @import url(video-player.css);
+
+@import url(icon-container.css);
 @import url(icon-control.css);
+
+@import url(presentation-container.css);
+@import url(presentation-title.css);
+@import url(presentation-video-container.css);
+@import url(video-player-description.css);
+
+@import url(plus-reference.css);
 
 @font-face {
 	font-family: 'Segoe WP';
 	src: url('../fonts/SegoeWP.ttf');
 	src: local('SegoeWP'), url('../fonts/SegoeWP.ttf') format('truetype');
+}
+
+a {
+	cursor:pointer;
 }
 
 .clear-fix::after {
@@ -24,83 +38,8 @@
 	overflow:hidden;
 }
 
-.header-container {
-	background-image:url(../images/header-bg.jpg);
-	padding:28px 0px;
-	box-sizing:border-box;
-}
 
-.header-container-table {
-	width:100%;
-	display:table;
-	max-width:1000px;
-	margin:0px auto;
-}
 
-.header-container-table__row {
-	display:table-row;
-}
 
-.header-container-table__row__cell {
-	display:table-cell;
-	
-}
 
-.header-container-table__row__cell--logo {
-	
-}
-
-.header-container-table__row--video .header-container-table__row__cell {
-	vertical-align:middle;
-	text-align:center;
-	padding-top:28px;
-}
-
-.header-container-table__row--video .header-container-table__row__cell:last-child {
-	text-align:right;
-}
-
-@media only screen and (max-width: 940px)
-{
-	.header-container {
-		padding:0px;
-	}
-	
-	.header-container-table__row {
-		display: table;
-    	width: 100%;	
-	}
-	
-	.header-container-table__row--video .header-container-table__row__cell {
-		padding-top:0px;
-	}
-	
-	.header-container-table__row--video .header-container-table__row__cell:last-child{
-		display:none;
-	}
-	
-	.header-container-table__row__cell--logo {
-		background-color:#585858;
-	}
-}
-
-.icon-container {
-	background-image:url(../images/icon-container-bg.png);
-	
-}
-
-.icon-container-inner {
-	display:table;
-	width:100%;
-	max-width:1000px;
-	margin:0px auto;
-}
-
-.icon-container__item {
-	padding:40px 0px;
-	width:33%;
-	box-sizing:border-box;
-	display:table-cell;
-	vertical-align:bottom;
-}
 

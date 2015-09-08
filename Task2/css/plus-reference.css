@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+.plus-reference {
+	position:relative;
+}
+
+.plus-reference__link {
+	font: 30px 'Segoe WP', Helvetica, sans-serif;
+	display:block;
+	position:absolute;
+	bottom: 4px;
+    right: 12px;
+	color:white;
+}
