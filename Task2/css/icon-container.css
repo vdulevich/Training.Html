@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+.icon-container {
+	background-image:url(../images/icon-container-bg.png);
+}
+
+.icon-container-wrap {
+	display:table;
+	width:100%;
+	max-width:1000px;
+	margin:0px auto;
+}
+
+.icon-container__item {
+	padding:40px 0px;
+	width:33%;
+	box-sizing:border-box;
+	display:table-cell;
+	vertical-align:bottom;
+}
+
+

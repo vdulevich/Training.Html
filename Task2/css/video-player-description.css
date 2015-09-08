@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+.video-palyer-description {
+	display:table;
+}
+
+.video-palyer-description__item {
+	display:table-cell;
+	vertical-align:top;
+}
+
+.video-palyer-description__item--description {
+	font: 29px 'Segoe WP', Helvetica, sans-serif;
+	color:white;
+	
+	background-color:#ec9e03;
+}
+
+.video-palyer-description__item--description div {
+	max-height:232px;
+	padding:20px 30px;
+	box-sizing:border-box;
+}
+
+.video-palyer-description__item--player {
+	vertical-align:middle;
+}

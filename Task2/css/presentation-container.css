@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+.presentation-container {
+	background-image:url(../images/presentation-container-bg.png);
+	min-height:510px;
+}
+
+.presentation-container-wrap {
+	max-width:1000px;
+	margin:0px auto;
+}
+
+@media only screen and (max-width: 940px)
+{
+	.presentation-container {
+		background-image:none;
+		min-height:inherit;
+	}
+}

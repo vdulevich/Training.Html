@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+.presentation-video-container {
+	display:table;
+}
+
+.presentation-video-container__item {
+	display:table-cell;
+}
+
+.presentation-video-container__item--video {
+	width:75%;
+	padding-right:33px;
+}
+
+.presentation-video-container__item--twitter {
+	width:25%;
+	background-color:#ec9e03;
+	vertical-align:middle;
+	text-align:center;
+}
+
+@media only screen and (max-width: 940px)
+{
+	.presentation-video-container__item {
+		display:block;
+		width:auto;
+	}
+	
+	.presentation-video-container__item--video {
+		padding:10px;
+	}
+	
+	.presentation-video-container__item--twitter {
+		background-color:#f5c507;
+		padding:50px;
+	}
+	
+}
