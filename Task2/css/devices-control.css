@@ -10,16 +10,16 @@
 .devices-control::before
 {
     content: 'Its 100% Free';
-	white-space:nowrap;
+    white-space: nowrap;
     position: absolute;
     background-color: #f5c506;
     border-radius: 50%;
     font: bold 18px 'Segoe WP', Helvetica, sans-serif;
     color: white;
-    height: 115px;
-    width: 115px;
+    height: 118px;
+    width: 118px;
     box-sizing: border-box;
-    padding-top: 45px;
+    padding-top: 47px;
     text-align: center;
     top: -38px;
     left: -20px;
