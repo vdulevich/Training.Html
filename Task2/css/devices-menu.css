@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+.devices-menu {
+	padding-left: 35px;
+}
+
+.devices-menu li {
+    color: #a9a9a7;
+    font: 22px 'Segoe WP', Helvetica, sans-serif;
+    text-indent: -38px;
+    padding-left: 38px;
+    position: relative;
+}
+
+.devices-menu li:before {
+	content: "•";
+    color: #f5c506;
+    font-size: 55px;
+    position: absolute;
+    top: -24px;
+}
+
