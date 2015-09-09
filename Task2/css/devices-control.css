@@ -10,6 +10,7 @@
 .devices-control::before
 {
     content: 'Its 100% Free';
+	white-space:nowrap;
     position: absolute;
     background-color: #f5c506;
     border-radius: 50%;
