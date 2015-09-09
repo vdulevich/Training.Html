@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+.footer-logo {
+	background: 10px 50% no-repeat url(../images/main-logo-small.png);
+	font: bold 19px 'Segoe WP', Helvetica, sans-serif;
+	text-transform:uppercase;
+	font-style:italic;
+	color:white;
+	padding:10px 10px 10px 60px;
+}
+
+.footer-logo--centered {
+	margin:0px auto;
+	display:inline-block;
+}

@@ -2,7 +2,9 @@
 /* CSS Document */
 
 .footer-container {
-	background-image:url(../images/footer-container-bg.png);	
+	background-image:url(../images/footer-container-bg.png);
+	padding-bottom:100px;
+	box-shadow: inset 0px -10px 15px -10px #000;	
 }
 
 .footer-title {
