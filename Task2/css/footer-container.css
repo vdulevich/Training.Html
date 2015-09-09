@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+.footer-container {
+	background-image:url(../images/footer-container-bg.png);	
+}
+
+.footer-title {
+	color:#f5c506;
+	text-transform:uppercase;
+	font: 43px 'Segoe WP', Helvetica, sans-serif;
+	text-align:center;	
+}
+
+.footer-title--padding {
+	padding:50px 0px;
+}

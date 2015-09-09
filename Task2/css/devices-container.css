@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.devices-container {
+	display:table;
+	width:100%;	
+}
+
+.devices-container__item {
+	display:table-cell;
+	vertical-align:top;
+}
+
+.devices-container__item--devices {
+	padding-right:80px;
+}
+
+.devices-container__item--menu {
+
+}
+
+@media only screen and (max-width: 940px)
+{
+	.devices-container {
+		text-align:center;
+	}
+	
+	.devices-container__item--devices {
+		display: inline-block;
+		padding-right:0px;
+	}
+	
+	.devices-container__item--menu {
+		display:none;
+	}
+}

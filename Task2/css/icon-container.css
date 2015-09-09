@@ -8,8 +8,6 @@
 .icon-container-wrap {
 	display:table;
 	width:100%;
-	max-width:1000px;
-	margin:0px auto;
 }
 
 .icon-container__item {

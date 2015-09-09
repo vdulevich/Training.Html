@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+.devices-control{
+	position:relative;
+	margin-left:20px;
+	min-width:547px;
+}
+
+.devices-control::before
+{
+    content: 'Its 100% Free';
+    position: absolute;
+    background-color: #f5c506;
+    border-radius: 50%;
+    font: bold 18px 'Segoe WP', Helvetica, sans-serif;
+    color: white;
+    height: 115px;
+    width: 115px;
+    box-sizing: border-box;
+    padding-top: 45px;
+    text-align: center;
+    top: -38px;
+    left: -20px;
+}
+
+.devices-control__item {
+	float:left;
+	padding-right:28px;
+}
+
+.devices-control__item:last-child{
+	padding-right:0px;
+}
+
+.devices-control__item--monitor {
+
+}
+
+.devices-control__item--tablet {
+	padding-top:40px;
+}
+
+.devices-control__item--phone {
+	padding-top:150px;
+}
+
+@media only screen and (max-width: 940px)
+{
+	.devices-control {
+		padding-right:30px;
+		padding-left:30px;
+	}
+}
+

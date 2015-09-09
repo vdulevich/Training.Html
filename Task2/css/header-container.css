@@ -10,8 +10,6 @@
 .header-container-table {
 	width:100%;
 	display:table;
-	max-width:1000px;
-	margin:0px auto;
 }
 
 .header-container-table__row {
