@@ -4,6 +4,7 @@
 .presentation-container {
 	background-image:url(../images/presentation-container-bg.png);
 	min-height:510px;
+	box-shadow: inset 0px 12px 14px -14px #000
 }
 
 @media only screen and (max-width: 940px)
@@ -11,5 +12,6 @@
 	.presentation-container {
 		background-image:none;
 		min-height:inherit;
+		box-shadow:none;
 	}
 }

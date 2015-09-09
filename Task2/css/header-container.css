@@ -5,6 +5,7 @@
 	background-image:url(../images/header-bg.jpg);
 	padding:28px 0px;
 	box-sizing:border-box;
+	box-shadow: inset 0px -12px 14px -12px #000
 }
 
 .header-container-table {
@@ -43,6 +44,7 @@
 {
 	.header-container {
 		padding:0px;
+		box-shadow:none;
 	}
 	
 	.header-container-table__row {

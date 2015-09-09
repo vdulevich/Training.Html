@@ -18,7 +18,8 @@
 @import url(devices-container.css);
 @import url(devices-control.css);
 @import url(devices-menu.css);
-
+@import url(footer-logo-container.css);
+@import url(footer-logo.css);
 
 @import url(plus-reference.css);
 
@@ -42,6 +43,7 @@ a {
 	max-width:1300px;
 	margin:0px auto;
 	overflow:hidden;
+	min-width:678px;
 }
 
 .base-container-wrap {
