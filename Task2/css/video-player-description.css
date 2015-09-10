@@ -26,3 +26,10 @@
 .video-palyer-description__item--player {
 	vertical-align:middle;
 }
+
+@media only screen and (max-width: 940px)
+{
+	.video-palyer-description__item--description {
+		font-size:26px;
+	}
+}

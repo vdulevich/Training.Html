@@ -19,15 +19,10 @@
 
 .header-container-table__row__cell {
 	display:table-cell;
-	
 }
 
 .header-container-table__row__cell--logo {
 	
-}
-
-.header-container-table__row__cell--menu {
-	text-align:right;
 }
 
 .header-container-table__row--logo .header-container-table__row__cell {
@@ -53,7 +48,7 @@
 	
 	.header-container-table__row {
 		display: table;
-    	width: 100%;	
+    	width: 100%;
 	}
 	
 	.header-container-table__row--video .header-container-table__row__cell {
@@ -66,9 +61,6 @@
 	
 	.header-container-table__row__cell--logo {
 		background-color:#585858;
-	}
-	
-	.header-container-table__row__cell--menu {
-		background-color:#f5c506;
+		width:100%;
 	}
 }

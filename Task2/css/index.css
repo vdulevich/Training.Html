@@ -42,8 +42,7 @@ a {
 .base-container {
 	max-width:1300px;
 	margin:0px auto;
-	overflow:hidden;
-	min-width:678px;
+	min-width:650px;
 }
 
 .base-container-wrap {
