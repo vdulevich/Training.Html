@@ -25,6 +25,11 @@
 	
 }
 
+.header-container-table__row__cell--video {
+	width:548px;
+	height:326px;	
+}
+
 .header-container-table__row--logo .header-container-table__row__cell {
 	vertical-align:middle;	
 }
