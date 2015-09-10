@@ -14,10 +14,11 @@
 }
 
 .devices-menu li:before {
-	content: "•";
+    content: "•";
     color: #f5c506;
     font-size: 55px;
     position: absolute;
-    top: -24px;
+    line-height: 22px;
+	left:0px;
 }
 

@@ -30,6 +30,10 @@
 	text-align:right;
 }
 
+.header-container-table__row--logo .header-container-table__row__cell {
+	vertical-align:middle;	
+}
+
 .header-container-table__row--video .header-container-table__row__cell {
 	vertical-align:middle;
 	text-align:center;
