@@ -7,19 +7,18 @@
     <link type="text/css" rel="stylesheet" href="css/reset.css" /> 
     <title>Untitled Document</title>
 </head>
-
 <body>
 	<div class="base-container">
-        <div class="header-container">
+        <div class="header-container-wrap">
         	<div class="base-container-wrap">
-                <div class="header-container-table">
-                    <div class="header-container-table__row header-container-table__row--logo">
-                        <div class="header-container-table__row__cell header-container-table__row__cell--logo">
+                <div class="header-container">
+                    <div class="header-container__row header-container__row--logo">
+                        <div class="header-container__row__cell header-container__row__cell--logo">
                             <div class="main-logo">
                                 TheYalow<span class="main-logo__subtitle">Craft By Css author.com</span>
-                            </div>
+                            </div>	
                         </div>
-                        <div class="header-container-table__row__cell">
+                        <div class="header-container__row__cell">
                             <ul class="main-menu main-menu--shadow">
                                 <li class="main-menu__item main-menu__item--aboutus"><a>About us</a></li>
                                 <li class="main-menu__item main-menu__item--services"><a>Services</a></li>
@@ -27,8 +26,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="header-container-table__row header-container-table__row--video">
-                        <div class="header-container-table__row__cell header-container-table__row__cell--video">
+                    <div class="header-container__row header-container__row--video">
+                        <div class="header-container__row__cell header-container__row__cell--video">
                             <!--<img alt="" src="images/palyer-bg.jpg" width="100%"/>-->
                            	<iframe style="background-image:url(images/palyer-bg.jpg)" 
                             	width="100%" 
@@ -37,7 +36,7 @@
                                 frameborder="0" 
                                 allowfullscreen></iframe>
                         </div>
-                         <div class="header-container-table__row__cell">
+                         <div class="header-container__row__cell">
                             <div class="video-title">
                                 The cool
                                 <div class="video-title__subtitle">The minimal</div>
@@ -47,29 +46,31 @@
                 </div>
             </div>
         </div>
-        <div class="icon-container clear-fix">
-            <div class="icon-container-wrap base-container-wrap">
-                <div class="icon-container__item">
-                    <div class="icon-control">
-                        <div><img src="images/icon-design.png"/></div>
-                        Better design
+        <div class="icon-container-wrap">
+        	<div class="base-container-wrap">
+                <div class="icon-container ">
+                    <div class="icon-container__item">
+                        <div class="icon-control">
+                            <div><img src="images/icon-design.png"/></div>
+                            Better design
+                        </div>
+                    </div>
+                    <div class="icon-container__item">
+                        <div class="icon-control">
+                            <div><img src="images/icon-customize.png"/></div>
+                            Customize
+                        </div>
+                    </div>
+                    <div class="icon-container__item">
+                        <div class="icon-control">
+                            <div><img src="images/icon-free.png" /></div>
+                            Its free
+                        </div>
                     </div>
                 </div>
-                <div class="icon-container__item">
-                    <div class="icon-control">
-                        <div><img src="images/icon-customize.png"/></div>
-                        Customize
-                    </div>
-                </div>
-                <div class="icon-container__item">
-                    <div class="icon-control">
-                        <div><img src="images/icon-free.png" /></div>
-                        Its free
-                    </div>
-                </div>
-            </div>
+        	</div>
         </div>
-        <div class="presentation-container">
+        <div class="presentation-container-wrap">
             <div class="base-container-wrap">
                 <div class="presentation-title presentation-title--padding">Lorem ipsum dolor sit amet</div>
                 <div class="presentation-video-container">
@@ -96,34 +97,30 @@
                 </div>
             </div>
         </div>
-        <div class="footer-container">
+        <div class="footer-container-wrap">
             <div class="base-container-wrap">
                 <div class="footer-title footer-title--padding">Lorem ipsum dolor sit amet</div>
                 <div class="devices-container">
                 	<div class="devices-container__item devices-container__item--devices">
-                        <div class="footer-container__item footer-container__item--devices">
-                            <div class="devices-control clear-fix">
-                                <div class="devices-control__item devices-control__item--monitor">
-                                    <img src="images/devices-monitor.png" />
-                                </div>
-                                <div class="devices-control__item devices-control__item--tablet">
-                                    <img src="images/devices-tablet.png" />
-                                </div>
-                                <div class="devices-control__item devices-control__item--phone">
-                                    <img src="images/devices-phone.png" />
-                                </div>
+                    	<div class="devices-control clear-fix">
+                            <div class="devices-control__item devices-control__item--monitor">
+                                <img src="images/devices-monitor.png" />
+                            </div>
+                            <div class="devices-control__item devices-control__item--tablet">
+                                <img src="images/devices-tablet.png" />
+                            </div>
+                            <div class="devices-control__item devices-control__item--phone">
+                                <img src="images/devices-phone.png" />
                             </div>
                         </div>
                     </div>
                     <div class="devices-container__item devices-container__item--menu">
-                        <div class="footer-container__item footer-container__item--menu">
-                            <ul class="devices-menu">
-                                <li>Sed ut perspiciatis unde omnis</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing </li>
-                                <li>Sed ut perspiciatis unde omnis</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing </li>
-                            </ul>
-                        </div>
+                        <ul class="devices-menu">
+                            <li>Sed ut perspiciatis unde omnis</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing </li>
+                            <li>Sed ut perspiciatis unde omnis</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing </li>
+                        </ul>
                     </div>
                 </div>
         	</div>
