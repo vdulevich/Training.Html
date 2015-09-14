@@ -48,6 +48,14 @@ a {
 .base-container-wrap {
 	max-width:1000px;
 	margin:0px auto;
+	padding:0px 20px;
+}
+
+@media only screen and (max-width: 940px)
+{
+	.base-container-wrap {
+		padding:0px;
+	}
 }
 
 

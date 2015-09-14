@@ -1,13 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
 
-.icon-container {
+.icon-container-wrap {
 	background-image:url(../images/icon-container-bg.png);
 }
 
-.icon-container-wrap {
+.icon-container {
 	display:table;
 	width:100%;
+	border-style:solid;
+	border-width:0px 1px;
+	border-color:#ececeb;
 }
 
 .icon-container__item {
@@ -16,6 +19,22 @@
 	box-sizing:border-box;
 	display:table-cell;
 	vertical-align:bottom;
+	border-right:1px solid #ececeb;
+}
+
+.icon-container__item:last-child {
+	border-right:none;
+}
+
+@media only screen and (max-width: 940px)
+{
+	.icon-container {
+		border:none;
+	}
+	
+	.icon-container__item {
+		border:none;
+	}
 }
 
 
