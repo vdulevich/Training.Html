@@ -40,7 +40,7 @@ a {
 }
 
 .base-container {
-	max-width:1300px;
+	/*max-width:1300px;*/
 	margin:0px auto;
 	min-width:650px;
 }
