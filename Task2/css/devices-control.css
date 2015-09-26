@@ -5,6 +5,7 @@
 	position:relative;
 	margin-left:20px;
 	min-width:547px;
+	white-space: nowrap;
 }
 
 .devices-control::before
@@ -23,11 +24,14 @@
     text-align: center;
     top: -38px;
     left: -20px;
+	z-index:1;
 }
 
 .devices-control__item {
-	float:left;
+	/*float:left;*/
+	display:inline-block;
 	padding-right:28px;
+	position:relative;
 }
 
 .devices-control__item:last-child{
@@ -39,11 +43,11 @@
 }
 
 .devices-control__item--tablet {
-	padding-top:40px;
+	top:-40px;
 }
 
 .devices-control__item--phone {
-	padding-top:150px;
+	top:-40px;
 }
 
 @media only screen and (max-width: 940px)
