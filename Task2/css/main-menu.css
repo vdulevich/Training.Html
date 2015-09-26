@@ -9,14 +9,14 @@
 }
 
 .main-menu {
-	background-color:#f5c506;
 	display:inline-table;
+	background-color:#f5c506;
 }
 
 .main-menu__item {
 	display:table-cell;
 	white-space:nowrap;
-	border-right:1px solid #dcb105;
+	border-left:1px solid #dcb105;
 	text-transform:uppercase;
 	color:#a28308;
 	padding:12px 20px 12px 0px;
@@ -51,6 +51,10 @@
 
 @media only screen and (max-width: 940px)
 {
+	.main-menu {
+		height:100%;
+	}
+	
 	.main-menu__item{
 		font-size:19px;
 		padding-right: 10px;

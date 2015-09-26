@@ -8,22 +8,17 @@
 	font: 27px 'Segoe WP', Helvetica, sans-serif;
 	background: 50% 0px no-repeat;
 }
-.icon-control div {
-	margin-bottom:15px;
-}
 
-.icon-control img {
-	height:100%;
+.icon-control .icon-font:before {
+	color:#ffcc00;
+	font-size:3.2em;
+	display:block;
 }
 
 @media only screen and (max-width: 940px)
 {
 	.icon-control {
 		font-size:23px;
-	}
-	
-	.icon-control div {
-		height:50px;	
 	}
 }
 
