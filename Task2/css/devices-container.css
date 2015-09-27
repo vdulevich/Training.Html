@@ -2,6 +2,20 @@
 /* CSS Document */
 
 
+.devices-container-wrap {
+	background-image:url(../images/devices-container-bg.png);
+	padding-bottom:100px;
+	box-shadow: inset 0px -10px 15px -10px #000;	
+}
+
+.devices-title {
+	color:#f5c506;
+	text-transform:uppercase;
+	font: 43px 'Segoe WP', Helvetica, sans-serif;
+	text-align:center;
+	padding:50px 0px;
+}
+
 .devices-container {
 	display:table;
 	width:100%;	
