@@ -6,7 +6,9 @@
 	background-position:10px 50%;
 	background-image:url(../images/logo-main.svg);
 	background-size:contain;
-	font: bold 41px 'Segoe WP', Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:41px;
+	font-family:'Segoe WP', Helvetica, sans-serif;
 	text-transform:uppercase;
 	color:white;
 	padding:10px 10px 10px 100px;
@@ -44,5 +46,15 @@
 	
 	.main-logo__subtitle{
 		display:none;	
+	}
+}
+
+@media only screen and (max-width: 640px)
+{
+	.main-logo {
+		font-size: 10px;
+    	padding-left: 35px;
+    	background-size: 25px;
+		background-position:6px 50%;
 	}
 }

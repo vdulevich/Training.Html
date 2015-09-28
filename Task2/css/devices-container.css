@@ -11,9 +11,10 @@
 .devices-title {
 	color:#f5c506;
 	text-transform:uppercase;
-	font: 43px 'Segoe WP', Helvetica, sans-serif;
 	text-align:center;
 	padding:50px 0px;
+	font-size:43px;
+	font-family: 'Segoe WP', Helvetica, sans-serif;
 }
 
 .devices-container {
@@ -47,5 +48,12 @@
 	
 	.devices-container__item--menu {
 		display:none;
+	}
+}
+
+@media only screen and (max-width: 640px)
+{
+	.devices-title {
+		font-size:20px;
 	}
 }

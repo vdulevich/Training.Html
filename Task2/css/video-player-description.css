@@ -11,9 +11,9 @@
 }
 
 .video-palyer-description__item--description {
-	font: 29px 'Segoe WP', Helvetica, sans-serif;
+	font-family:'Segoe WP', Helvetica, sans-serif;
 	color:white;
-	
+	font-size:29px;
 	background-color:#ec9e03;
 }
 
@@ -31,5 +31,20 @@
 {
 	.video-palyer-description__item--description {
 		font-size:26px;
+	}
+}
+
+@media only screen and (max-width: 640px)
+{
+	.video-palyer-description__item--description {
+		font-size:14px;
+	}
+	
+	.video-palyer-description__item--description div {
+		padding:10px;
+	}
+	
+	.video-palyer-description__item--player img {
+		height:100px;
 	}
 }
