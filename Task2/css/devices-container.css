@@ -3,8 +3,8 @@
 
 
 .devices-container-wrap {
+	overflow:hidden;
 	background-image:url(../images/devices-container-bg.png);
-	padding-bottom:100px;
 	box-shadow: inset 0px -10px 15px -10px #000;	
 }
 
@@ -12,14 +12,15 @@
 	color:#f5c506;
 	text-transform:uppercase;
 	text-align:center;
-	padding:50px 0px;
+	margin:50px 0px;
 	font-size:43px;
 	font-family: 'Segoe WP', Helvetica, sans-serif;
 }
 
 .devices-container {
 	display:table;
-	width:100%;	
+	width:100%;
+	margin-bottom:100px;
 }
 
 .devices-container__item {
@@ -55,5 +56,11 @@
 {
 	.devices-title {
 		font-size:20px;
+		margin-top:20px;
+	}
+	
+	.devices-container {
+		text-align:center;
+		margin-bottom:30px;
 	}
 }
