@@ -3,8 +3,7 @@
 
 .devices-control{
 	position:relative;
-	margin-left:20px;
-	min-width:547px;
+	margin-left:2em;
 	white-space: nowrap;
 }
 
@@ -17,14 +16,14 @@
     border-radius: 50%;
     font: bold 18px 'Segoe WP', Helvetica, sans-serif;
     color: white;
-    height: 118px;
-    width: 118px;
+    height: 6em;
+    width: 6em;
     box-sizing: border-box;
-    padding-top: 47px;
+    padding-top: 2.3em;
     text-align: center;
     top: -38px;
-    left: -20px;
-	z-index:1;
+    left: -2em;
+    z-index: 1;
 }
 
 .devices-control__item {
@@ -54,7 +53,15 @@
 {
 	.devices-control {
 		padding-right:30px;
-		padding-left:30px;
+		
+	}
+}
+
+@media only screen and (max-width: 640px)
+{
+	.devices-control:before
+	{
+		font-size:12px;
 	}
 }
 

@@ -39,9 +39,8 @@ a {
 }
 
 .base-container {
-	/*max-width:1300px;*/
 	margin:0px auto;
-	min-width:650px;
+	min-width:320px;
 }
 
 .base-container-wrap {

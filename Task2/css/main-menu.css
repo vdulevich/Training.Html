@@ -20,21 +20,20 @@
 	border-right:1px solid #dcb105;
 	color:#cc9900;
 	padding:12px 20px 12px 0px;
+	font-size:17px;
 }
 
 .main-menu__item a {
     cursor: pointer;
-	font: bold 17px 'Segoe WP', Helvetica, sans-serif;
+	font-weight:bold;
+	font-family:'Segoe WP', Helvetica, sans-serif;
 	text-transform:uppercase;
 }
 
 .main-menu__item div:before
 {
 	padding: 0px 10px;
-    font-size: 20px;
-    /* line-height: 0px; */
-    position: relative;
-    top: 2px;
+    font-size: 1.2em;
 }
 
 .main-menu__item:hover {
@@ -45,42 +44,6 @@
 	border-right: none;
 }
 
-.no-svg .main-menu__item div:before
-{
-	display:none;
-}
-
-.no-svg .main-menu__item div
-{
-	background-repeat:no-repeat;
-	background-position:12px 50%;
-	padding-left:40px;
-}
-
-.no-svg .main-menu__item .icon-font-letter {
-	background-image:url(../images/icon-letter.png);
-}
-
-.no-svg .main-menu__item .icon-font-service {
-	background-image:url(../images/icon-service.png);
-}
-
-.no-svg .main-menu__item .icon-font-person {
-	background-image:url(../images/icon-person.png);
-}
-
-/*.link--aboutus a {
-	background-image:url(../images/main-menu-item-aboutus.png);
-}
-
-.link--services a {
-	background-image:url(../images/main-menu-item-services.png);
-}
-
-.link--contacts a {
-	background-image:url(../images/main-menu-item-contacts.png);
-}*/
-
 @media only screen and (max-width: 940px)
 {
 	.main-menu {
@@ -88,7 +51,7 @@
 	}
 	
 	.main-menu__item{
-		font-size:19px;
+		font-size:18px;
 		padding-right: 10px;
 	}
 	
@@ -97,6 +60,19 @@
 		-webkit-box-shadow: none;
 		-moz-box-shadow: none;
 		box-shadow: none;	
+	}
+}
+
+@media only screen and (max-width: 640px)
+{
+	.main-menu__item {
+		font-size:10px;
+		padding-right: 5px;
+	}
+	
+	.main-menu__item div:before
+	{
+		padding: 0px 5px;
 	}
 }
 
