@@ -14,7 +14,8 @@
     position: absolute;
     background-color: #f5c506;
     border-radius: 50%;
-    font: bold 18px 'Segoe WP', Helvetica, sans-serif;
+    font-size:18px;
+	font-weight:bold;
     color: white;
     height: 6em;
     width: 6em;
