@@ -3,45 +3,43 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="css/index.css" /> 
-    <link type="text/css" rel="stylesheet" href="css/reset.css" /> 
     <script type="text/javascript" src="js/modernizr.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="css/container.css" />
+    <link type="text/css" rel="stylesheet" href="css/index.css" /> 
     <title>Untitled Document</title>
 </head>
 <body>
 	<div class="base-container">
         <div class="header-container-wrap">
         	<div class="base-container-wrap">
-                <div class="header-container">
-                    <div class="header-container-item header-container-item--top">
-                        <div class="header-container-item-cell header-container-item-cell--logo">
-                            <div class="main-logo">
-                                TheYalow<span class="main-logo__subtitle">Craft By Css author.com</span>
-                            </div>	
-                        </div>
-                        <div class="header-container-item-cell header-container-item-cell--menu">
-                            <ul class="main-menu main-menu--shadow">
-                                <li class="main-menu__item"><div class="icon-font-person"><a>About us</a></div></li>
-                                <li class="main-menu__item"><div class="icon-font-service"><a>Services</a></div></li>
-                                <li class="main-menu__item"><div class="icon-font-letter"><a>Contact</a></div></li>
-                            </ul>
-                        </div>
+                <div class="container-table container-table--top">
+                    <div class="column column--logo">
+                        <div class="main-logo">
+                            TheYalow<span class="main-logo__subtitle">Craft By Css author.com</span>
+                        </div>	
                     </div>
-                    <div class="header-container-item header-container-item--bottom">
-                        <div class="header-container-item-cell header-container-item-cell--video">
-                            <!--<img alt="" src="images/palyer-bg.jpg" width="100%"/>-->
-                           	<iframe style="background-image:url(images/palyer-bg.jpg)" 
-                            	width="100%" 
-                                height="100%" 
-                                src="https://www.youtube.com/embed/rK2584Xb_9Q" 
-                                frameborder="0" 
-                                allowfullscreen></iframe>
-                        </div>
-                         <div class="header-container-item-cell header-container-item-cell--title">
-                            <div class="video-title">
-                                The cool
-                                <div class="video-title__subtitle">The minimal</div>
-                            </div>
+                    <div class="column column--menu">
+                        <ul class="main-menu main-menu--shadow">
+                            <li class="main-menu__item icon-font-person"><a>About us</a></li>
+                            <li class="main-menu__item icon-font-service"><a>Services</a></li>
+                            <li class="main-menu__item icon-font-letter"><a>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container-table container-table--bottom">
+                    <div class="column column--video">
+                        <iframe style="background-color:black;" 
+                            width="100%" 
+                            height="100%" 
+                            src="https://www.youtube.com/embed/rK2584Xb_9Q" 
+                            frameborder="0" 
+                            allowfullscreen></iframe>
+                    </div>
+                     <div class="column column--title">
+                        <div class="main-title">
+                            The cool
+                            <div class="main-title__subtitle">The minimal</div>
                         </div>
                     </div>
                 </div>
@@ -49,49 +47,48 @@
         </div>
         <div class="icon-container-wrap">
         	<div class="base-container-wrap">
-                <div class="icon-container ">
-                    <div class="icon-container__item">
-                        <div class="icon-control">
-                            <div class="icon-font icon-font-cloud"></div>
-                            Better design
+                <div class="container icon-container">
+               		<div class="row">
+                    	<div class="one-third column">
+                        	<div class="icon-control">
+                            	<div class="icon-font icon-font-cloud"></div>
+                            	Better design
+                            </div>
                         </div>
-                    </div>
-                    <div class="icon-container__item">
-                        <div class="icon-control">
-                            <div class="icon-font icon-font-leaf"></div>
-                            Customize
+                    	<div class="one-third column">
+							<div class="icon-control">
+                                <div class="icon-font icon-font-leaf"></div>
+                                Customize
+                            </div>
                         </div>
-                    </div>
-                    <div class="icon-container__item">
-                        <div class="icon-control">
-                            <div class="icon-font icon-font-plain"></div>
-                            Its free
+                        <div class="one-third column">
+                        	<div class="icon-control">
+                            	<div class="icon-font icon-font-plain"></div>
+                            	Its free
+                        	</div>
                         </div>
-                    </div>
+                  	</div>
                 </div>
         	</div>
         </div>
         <div class="presentation-container-wrap">
             <div class="base-container-wrap">
                 <div class="presentation-title presentation-title--padding">Lorem ipsum dolor sit amet</div>
-                <div class="presentation-video-container">
-                    <div class="presentation-video-container__item presentation-video-container__item--video">
-                        <div class="video-palyer-description">
-                            <div class="video-palyer-description__item video-palyer-description__item--description plus-reference">
-                                <div>Lorem ipsum dolor sit amet, 
+                <div class="presentation-container container-table">
+                	<div class="nine columns column--left">
+                    	<div class="container-table preview-container">
+                            <div class="seven columns column--description plus-reference">
+                                Lorem ipsum dolor sit amet, 
                                 consectetur adipisicing elit, 
-                                sed do eiusmod tempor incididunt ut</div>
-                                <a class="plus-reference__link">+</a>
+                                sed do eiusmod tempor incididunt ut
                             </div>
-                            <div class="video-palyer-description__item video-palyer-description__item--player">
-                                <img src="images/player-simple-bg.jpg" />
+                            <div class="column column--video">
+                                <img src="images/player-simple-bg.jpg" style="width:100%;" />
                             </div>
-                            <div class="video-palyer-description__item"></div>
                         </div>
                     </div>
-                    <div class="presentation-video-container__item presentation-video-container__item--twitter plus-reference">
+                    <div class="three columns column--right plus-reference">
                         <div class="icon-font-twitter"></div>
-                        <a class="plus-reference__link">+</a>
                     </div>
                 </div>
             </div>
@@ -99,19 +96,21 @@
         <div class="devices-container-wrap">
             <div class="base-container-wrap">
                 <div class="devices-title">Lorem ipsum dolor sit amet</div>
-                <div class="devices-container">
-                	<div class="devices-container__item devices-container__item--devices">
-                        <div class="devices-control">
-                        	<img src="images/devices.png" width="100%"/>
+                <div class="container devices-container">
+                	<div class="row">
+                        <div class="column one-half column--devices">
+                            <div class="devices-control">
+                                <img src="images/devices.png" width="100%"/>
+                            </div>
                         </div>
-                    </div>
-                    <div class="devices-container__item devices-container__item--menu">
-                        <ul class="devices-menu">
-                            <li>Sed ut perspiciatis unde omnis</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing </li>
-                            <li>Sed ut perspiciatis unde omnis</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing </li>
-                        </ul>
+                        <div class="column one-half column--list">
+                            <ul class="devices-menu">
+                                <li>Sed ut perspiciatis unde omnis</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing </li>
+                                <li>Sed ut perspiciatis unde omnis</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
         	</div>

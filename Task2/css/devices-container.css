@@ -17,22 +17,16 @@
 	font-family: 'Segoe WP', Helvetica, sans-serif;
 }
 
-.devices-container {
-	display:table;
-	width:100%;
+.devices-container
+{
 	margin-bottom:100px;
 }
 
-.devices-container__item {
-	display:table-cell;
-	vertical-align:top;
-}
-
-.devices-container__item--devices {
+.devices-container .column--devices {
 	padding-right:80px;
 }
 
-.devices-container__item--menu {
+.devices-container .column--list {
 
 }
 
@@ -42,12 +36,14 @@
 		text-align:center;
 	}
 	
-	.devices-container__item--devices {
+	.devices-container .one-half.column.column--devices {
 		display: inline-block;
+		float:none;
+		width:auto;
 		padding-right:0px;
 	}
 	
-	.devices-container__item--menu {
+	.devices-container .column--list {
 		display:none;
 	}
 }

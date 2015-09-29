@@ -17,6 +17,7 @@
 
 .no-svg .main-logo{
 	background-image:url(../images/logo-main.png);
+	padding:20px 10px 20px 100px;
 }
 
 .main-logo span {
@@ -40,11 +41,10 @@
 {
 	.main-logo {
 		font-size:19px;
-		background-size:32px;
 		padding-left:60px;
 	}
 	
-	.main-logo__subtitle{
+	.main-logo__subtitle {
 		display:none;	
 	}
 }
@@ -54,7 +54,6 @@
 	.main-logo {
 		font-size: 10px;
     	padding-left: 35px;
-    	background-size: 25px;
 		background-position:6px 50%;
 	}
 }

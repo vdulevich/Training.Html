@@ -3,16 +3,14 @@
 @import url(header-container.css);
 @import url(main-menu.css);
 @import url(main-logo.css);
-@import url(video-title.css);
+@import url(main-title.css);
 @import url(video-player.css);
 
 @import url(icon-container.css);
 @import url(icon-control.css);
 
 @import url(presentation-container.css);
-@import url(presentation-title.css);
-@import url(presentation-video-container.css);
-@import url(video-player-description.css);
+@import url(preview-container.css);
 
 @import url(devices-container.css);
 @import url(devices-control.css);

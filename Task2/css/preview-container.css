@@ -1,0 +1,28 @@
+.preview-container
+{
+	table-layout:fixed;
+	max-height:232px;
+}
+
+.preview-container .column--description {
+	font-family:'Segoe WP', Helvetica, sans-serif;
+	color:white;
+	background-color:#ec9e03;
+	padding:3%;
+}
+
+
+@media only screen and (max-width: 940px)
+{
+	.preview-container {
+		padding:10px;
+		box-sizing:border-box;
+	}
+}
+
+@media only screen and (max-width: 640px)
+{
+	.preview-container {
+		padding:5px;
+	}
+}

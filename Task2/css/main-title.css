@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-.video-title {
+.main-title {
 	text-transform:uppercase;
 	text-align:center;
 	display:inline-block;
@@ -9,6 +9,6 @@
 	color:white;
 }
 
-.video-title__subtitle {
+.main-title__subtitle {
 	color:#f5c506;
 }
