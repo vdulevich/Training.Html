@@ -21,13 +21,14 @@
 	color:#cc9900;
 	padding:12px 20px 12px 0px;
 	font-size:17px;
+	
 	cursor: pointer;
 }
 
 .main-menu__item a {
 	font-weight:bold;
-	font-family:'Segoe WP', Helvetica, sans-serif;
 	text-transform:uppercase;
+	font-family:'Segoe WP', Helvetica, sans-serif;
 }
 
 .main-menu__item:before

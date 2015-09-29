@@ -7,9 +7,8 @@
 
 .devices-menu li {
     color: #a9a9a7;
-    font: 22px 'Segoe WP', Helvetica, sans-serif;
-    text-indent: -38px;
-    padding-left: 38px;
+    font-size: 22px;
+    padding: 8px 0px 8px 38px;
     position: relative;
 }
 
