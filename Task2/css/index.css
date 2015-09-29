@@ -10,9 +10,7 @@
 @import url(icon-control.css);
 
 @import url(presentation-container.css);
-@import url(presentation-title.css);
-@import url(presentation-video-container.css);
-@import url(video-player-description.css);
+@import url(preview-container.css);
 
 @import url(devices-container.css);
 @import url(devices-control.css);

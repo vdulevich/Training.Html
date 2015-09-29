@@ -21,16 +21,16 @@
 	color:#cc9900;
 	padding:12px 20px 12px 0px;
 	font-size:17px;
+	cursor: pointer;
 }
 
 .main-menu__item a {
-    cursor: pointer;
 	font-weight:bold;
 	font-family:'Segoe WP', Helvetica, sans-serif;
 	text-transform:uppercase;
 }
 
-.main-menu__item div:before
+.main-menu__item:before
 {
 	padding: 0px 10px;
     font-size: 1.2em;
@@ -50,7 +50,7 @@
 		height:100%;
 	}
 	
-	.main-menu__item{
+	.main-menu__item {
 		font-size:18px;
 		padding-right: 10px;
 	}
@@ -70,7 +70,7 @@
 		padding-right: 5px;
 	}
 	
-	.main-menu__item div:before
+	.main-menu__item:before
 	{
 		padding: 0px 5px;
 	}

@@ -1,11 +1,39 @@
-@charset "utf-8";
-/* CSS Document */
-
 .presentation-container-wrap {
 	background-image:url(../images/presentation-container-bg.png);
 	min-height:510px;
 	box-shadow: inset 0px 12px 14px -14px #000
 }
+
+.presentation-container
+{
+	font-size:30px;
+}
+
+.presentation-title {
+	text-transform:uppercase;
+	font: 37px 'Segoe WP', Helvetica, sans-serif;
+	color:white;
+}
+
+.presentation-title--padding {
+	padding:45px 0px;
+}
+
+.presentation-container .column--left {
+	padding-right:33px;
+}
+
+.presentation-container .column--right {
+	background-color:#ec9e03;
+	vertical-align:middle;
+	text-align:center;
+	color: #cc9900;
+}
+
+.presentation-container .column--right .icon-font-twitter {
+	font-size: 5em;
+}
+
 
 @media only screen and (max-width: 940px)
 {
@@ -13,5 +41,42 @@
 		background-image:none;
 		min-height:inherit;
 		box-shadow:none;
+	}
+	
+	.presentation-container {
+		display:block;
+		width:auto;
+	}
+	
+	.presentation-title {
+		display:none;
+	}
+	
+	.presentation-container .column--right,
+	.presentation-container .column--left {
+		display:block;
+		width:auto;
+	}
+	
+	.presentation-container .column--left {
+		padding-right:0px;
+	}
+	
+	.presentation-container .column--right {
+		background-color:#f5c507;
+		padding:50px 0px;
+		display:block;
+		width:auto;
+	}
+}
+
+@media only screen and (max-width: 640px)
+{
+	.presentation-container {
+		font-size:14px;
+	}
+	
+	.presentation-container .column--right {
+		padding:15px 0px;
 	}
 }

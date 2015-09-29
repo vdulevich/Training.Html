@@ -1,0 +1,54 @@
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box; 
+}
+  
+.container .column,
+.container .columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; 
+}
+
+.one.column,
+.one.columns                    { width: 8.33333333333%; }
+.two.columns                    { width: 16.66666667%; }
+.three.columns                  { width: 25%; }
+.four.columns                   { width: 33.33333333%; }
+.five.columns                   { width: 41.66666667%; }
+.six.columns                    { width: 50%; }
+.seven.columns                  { width: 58.33333333%; }
+.eight.columns                  { width: 66.66666667%; }
+.nine.columns                   { width: 75%; }
+.ten.columns                    { width: 83.33333333%; }
+.eleven.columns                 { width: 91.66666667%; }
+.twelve.columns                 { width: 100%; margin-left: 0; }
+
+.one-third.column { width: 33.3333333333%; }
+.one-half.column { width: 50%; }
+.three-four.column { width: 75%; }
+
+/* Self Clearing Goodness */
+.container:after,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+
+.container-table {
+  display:table;
+  width:100%;
+}
+
+.container-table .row {
+  display:table-row; 
+}
+
+.container-table .column,
+.container-table .columns {
+	display:table-cell; 
+	vertical-align:top;
+}
