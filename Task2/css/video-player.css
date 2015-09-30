@@ -1,6 +1,7 @@
 .video-player {
 	position:relative;
 	background-color:black;
+	height:100%;
 }
 
 .video-player .video-play-button {
