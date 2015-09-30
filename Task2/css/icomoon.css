@@ -44,3 +44,9 @@
 .icon-font-twitter:before {
 	content: "\e606";
 }
+.icon-font-play:before {
+	content: "\e607";
+}
+.icon-font-pause:before {
+	content: "\e608";
+}
