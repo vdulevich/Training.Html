@@ -4,10 +4,17 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
     <link type="text/css" rel="stylesheet" href="css/reset.css" />
     <link type="text/css" rel="stylesheet" href="css/container.css" />
     <link type="text/css" rel="stylesheet" href="css/index.css" /> 
     <title>Untitled Document</title>
+    <script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function() {
+		   var playerLarge = new player('playerLarge');
+			playerLarge.init();
+		}, false);
+	</script>
 </head>
 <body>
 	<div class="base-container">
@@ -16,7 +23,8 @@
                 <div class="container-table container-table--top">
                     <div class="column column--logo">
                         <div class="main-logo">
-                            TheYalow<span class="main-logo__subtitle">Craft By Css author.com</span>
+                            TheYalow
+                            <span class="main-logo__subtitle">Craft By Css author.com</span>
                         </div>	
                     </div>
                     <div class="column column--menu">
@@ -29,12 +37,20 @@
                 </div>
                 <div class="container-table container-table--bottom">
                     <div class="column column--video">
-                        <iframe style="background-color:black;" 
+                        <!--<iframe style="background-color:black;" 
                             width="100%" 
                             height="100%" 
                             src="https://www.youtube.com/embed/rK2584Xb_9Q" 
                             frameborder="0" 
-                            allowfullscreen></iframe>
+                            allowfullscreen></iframe>-->
+                            <div id="playerLarge" class="video-player">
+                                <video height="100%" 
+                                 width="100%" 
+                                 poster="images/palyer-bg.jpg"
+                                 src="video/video.mp4">
+                                </video>
+                                <div class="video-play-button icon-font-play"></div>
+                            </div>
                     </div>
                      <div class="column column--title">
                         <div class="main-title">
@@ -74,7 +90,7 @@
         <div class="presentation-container-wrap">
             <div class="base-container-wrap">
                 <div class="presentation-title presentation-title--padding">Lorem ipsum dolor sit amet</div>
-                <div class="presentation-container container-table">
+                <div class="container-table presentation-container">
                 	<div class="nine columns column--left">
                     	<div class="container-table preview-container">
                             <div class="seven columns column--description plus-reference">
@@ -97,20 +113,18 @@
             <div class="base-container-wrap">
                 <div class="devices-title">Lorem ipsum dolor sit amet</div>
                 <div class="container devices-container">
-                	<div class="row">
-                        <div class="column one-half column--devices">
-                            <div class="devices-control">
-                                <img src="images/devices.png" width="100%"/>
-                            </div>
+                    <div class="column one-half column--devices">
+                        <div class="devices-control">
+                            <img src="images/devices.png" width="100%"/>
                         </div>
-                        <div class="column one-half column--list">
-                            <ul class="devices-menu">
-                                <li>Sed ut perspiciatis unde omnis</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing </li>
-                                <li>Sed ut perspiciatis unde omnis</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing </li>
-                            </ul>
-                        </div>
+                    </div>
+                    <div class="column one-half column--list">
+                        <ul class="devices-menu">
+                            <li>Sed ut perspiciatis unde omnis</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing </li>
+                            <li>Sed ut perspiciatis unde omnis</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing </li>
+                        </ul>
                     </div>
                 </div>
         	</div>
