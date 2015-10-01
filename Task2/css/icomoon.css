@@ -22,7 +22,16 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
+.icon-font-button-play .path1:before {
+	content: "\e607";
+	color: rgb(255, 205, 5);
+	color: rgba(255, 205, 5, 0.5);
+}
+.icon-font-button-play .path2:before {
+	content: "\e608";
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+}
 .icon-font-cloud:before {
 	content: "\e600";
 }
@@ -43,10 +52,4 @@
 }
 .icon-font-twitter:before {
 	content: "\e606";
-}
-.icon-font-play:before {
-	content: "\e607";
-}
-.icon-font-pause:before {
-	content: "\e608";
 }
