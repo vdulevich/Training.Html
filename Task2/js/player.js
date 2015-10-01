@@ -18,6 +18,8 @@ player.prototype.init = function(){
 	me.__video = container.getElementsByTagName('video')[0];
 	me.__playButtonLarge = container.getElementsByClassName(me.__playButtonLargeCss)[0];
 	me.__playButtonLarge.addEventListener('click', me.togglePlayback.bind(me));
+	me.__playButtonLarge.addEventListener('mousedown', function(){ return false; });
+	me.__playButtonLarge.addEventListener('selectstart', function(){ return false; });
 	me.__video.addEventListener('click', me.togglePlayback.bind(me));
 }
 
