@@ -23,8 +23,7 @@
 
 .video-player .play-button-large,
 .video-player .play-button-large span,
-.video-player .play-button-large path1:before,
-.video-player .play-button-large path2:before {
+.video-player .play-button-large span:before {
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
