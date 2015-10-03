@@ -35,6 +35,11 @@
 	position:absolute;
 	bottom:0px;
 	width:100%;
+	display:none;
+}
+
+.video-player.video-player--play .video-panel{
+	display:block;
 }
 
 .video-panel .column{
