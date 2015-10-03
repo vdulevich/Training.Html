@@ -10,8 +10,8 @@ function player(id) {
 	me.__containerPlayCss = 'video-player--play';
 	me.__playButtonLargeCss = 'play-button-large';
 	me.__playButtonSmallCss = 'play-button-small';
-	//me.__playButtonSmallPauseCss = 'icon-font-pause';
-	//me.__playButtonSmallPlayCss = 'icon-font-play';
+	me.__playButtonSmallPauseCss = 'icon-font-pause';
+	me.__playButtonSmallPlayCss = 'icon-font-play';
 	me.__progressCss = 'video-progress-bar';
 	
 	me.replaceClass = function(el, className, newClassName) {
@@ -26,13 +26,13 @@ function player(id) {
 	}
 	me.play = function(){
 		me.__container.className += ' ' + me.__containerPlayCss;
-		//me.__playButtonSmall.className = me.__playButtonSmall.className.replace(me.__playButtonSmallPlayCss, me.__playButtonSmallPauseCss);
+		me.__playButtonSmall.className = me.__playButtonSmall.className.replace(me.__playButtonSmallPlayCss, me.__playButtonSmallPauseCss);
 		me.__video.play();
 	};
 	
 	me.pause = function(){
 		me.replaceClass(this.__container, me.__containerPlayCss, '');
-		//me.__playButtonSmall.className = me.__playButtonSmall.className.replace(me.__playButtonSmallPauseCss, me.__playButtonSmallPlayCss);
+		me.__playButtonSmall.className = me.__playButtonSmall.className.replace(me.__playButtonSmallPauseCss, me.__playButtonSmallPlayCss);
 		me.__video.pause();
 	};
 };
