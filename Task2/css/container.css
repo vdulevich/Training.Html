@@ -52,3 +52,8 @@
 	display:table-cell; 
 	vertical-align:top;
 }
+
+.container-table.container-table--middle .column,
+.container-table.container-table--middle .columns {
+	vertical-align:middle;
+}

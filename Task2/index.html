@@ -7,8 +7,27 @@
     <script type="text/javascript" src="js/player.js"></script>
     <link type="text/css" rel="stylesheet" href="css/reset.css" />
     <link type="text/css" rel="stylesheet" href="css/container.css" />
-    <link type="text/css" rel="stylesheet" href="css/index.css" /> 
-    <title>Untitled Document</title>
+    <link type="text/css" rel="stylesheet" href="css/icomoon.css" />
+    <link type="text/css" rel="stylesheet" href="css/index.css" />  
+    <link type="text/css" rel="stylesheet" href="css/plus-reference.css" />
+    <link type="text/css" rel="stylesheet" href="css/utils.css" />
+        
+    <link type="text/css" rel="stylesheet" href="css/header-container.css" />
+    <link type="text/css" rel="stylesheet" href="css/main-logo.css" />
+    <link type="text/css" rel="stylesheet" href="css/main-menu.css" />
+    <link type="text/css" rel="stylesheet" href="css/main-title.css" />
+    <link type="text/css" rel="stylesheet" href="css/video-player.css" />
+    <link type="text/css" rel="stylesheet" href="css/icon-container.css" />
+    <link type="text/css" rel="stylesheet" href="css/icon-control.css" />
+    <link type="text/css" rel="stylesheet" href="css/presentation-container.css" />
+    <link type="text/css" rel="stylesheet" href="css/preview-container.css" />
+    <link type="text/css" rel="stylesheet" href="css/devices-container.css" />
+    <link type="text/css" rel="stylesheet" href="css/devices-control.css" />
+    <link type="text/css" rel="stylesheet" href="css/devices-menu.css" />
+    <link type="text/css" rel="stylesheet" href="css/footer-container.css" />
+
+   
+    <title>Responsive design</title>
     <script type="text/javascript">
 		document.addEventListener('DOMContentLoaded', function() {
 		   var playerLarge = new player('playerLarge');
@@ -30,7 +49,7 @@
                     <div class="column column--menu">
                         <ul class="main-menu main-menu--shadow">
                             <li class="main-menu__item icon-font-person"><a>About us</a></li>
-                            <li class="main-menu__item icon-font-service"><a>Services</a></li>
+                            <li class="main-menu__item icon-font-services"><a>Services</a></li>
                             <li class="main-menu__item icon-font-letter"><a>Contact</a></li>
                         </ul>
                     </div>
@@ -43,9 +62,23 @@
                                        poster="images/palyer-bg.jpg"
                                        src="video/video.mp4">
                                 </video>
-                                <span class="play-button-large icon-font-button-play">
+                                <div class="play-button-large icon-font-button-play user-noselect">
                                 	<span class="path1"></span><span class="path2"></span>
-                                </span>
+                                </div>
+                                <div class="container-table container-table--middle video-panel">
+                                	<div class="column">
+                                    	<div class="play-button-small icon-font-play"></div>
+                                    </div>
+                                    <div class="columns twelve user-noselect">
+                                    	<div class="video-progress">
+                                            <div class="video-progress-bar">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<div class="column">
+                                    	<div class="video-volume icon-font-volume-mute"></div>
+                                    </div>-->
+                                </div>
                             </div>
                     </div>
                      <div class="column column--title">
@@ -63,19 +96,19 @@
                		<div class="row">
                     	<div class="one-third column">
                         	<div class="icon-control">
-                            	<div class="icon-font icon-font-cloud"></div>
+                            	<div class="icon-font-cloud"></div>
                             	Better design
                             </div>
                         </div>
                     	<div class="one-third column">
 							<div class="icon-control">
-                                <div class="icon-font icon-font-leaf"></div>
+                                <div class="icon-font-leaf"></div>
                                 Customize
                             </div>
                         </div>
                         <div class="one-third column">
                         	<div class="icon-control">
-                            	<div class="icon-font icon-font-plain"></div>
+                            	<div class="icon-font-plain"></div>
                             	Its free
                         	</div>
                         </div>
@@ -125,7 +158,7 @@
                 </div>
         	</div>
         </div>
-        <div class="footer-logo-container">
+        <div class="footer-container">
         	<div class="main-logo main-logo--footer">
             	TheYalow
             </div>
