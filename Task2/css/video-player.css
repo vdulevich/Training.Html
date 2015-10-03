@@ -31,11 +31,12 @@
 }
 
 .video-panel {
-	height:50px;
 	position:absolute;
 	bottom:0px;
 	width:100%;
 	display:none;
+	padding:5px;
+	box-sizing:border-box;
 }
 
 .video-player.video-player--play .video-panel{
@@ -49,9 +50,9 @@
 }
 
 .play-button-small {
-	margin:0px 4px 0px 6px;
-	cursor:pointer;
-	font-size:1.8em;
+	cursor: pointer;
+    font-size: 1.8em;
+    margin-right: 5px;
 }
 
 .video-volume {
