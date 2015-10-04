@@ -1,6 +1,6 @@
 .devices-container-wrap {
 	overflow:hidden;
-	background-image:url(../images/devices-container-bg.png);
+	background:#333333 url(../images/devices-container-bg.jpg);
 	box-shadow: inset 0px -10px 15px -10px #000;	
 }
 

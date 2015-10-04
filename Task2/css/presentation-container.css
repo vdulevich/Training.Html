@@ -1,5 +1,5 @@
 .presentation-container-wrap {
-	background-image:url(../images/presentation-container-bg.png);
+	background:#ffcc33 url(../images/presentation-container-bg.jpg);
 	min-height:510px;
 	box-shadow: inset 0px 12px 14px -14px #000
 }
@@ -38,7 +38,7 @@
 @media only screen and (max-width: 940px)
 {
 	.presentation-container-wrap {
-		background-image:none;
+		background:none;
 		min-height:inherit;
 		box-shadow:none;
 	}
