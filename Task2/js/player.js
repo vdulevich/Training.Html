@@ -26,26 +26,10 @@ function player(id) {
 	
 	me.togglePlayback = function(){
 		if(me.__video.paused) {
-			me.play();
+			me.__video.play();
 		} else {
-			me.pause();
+			me.__video.pause();
 		}
-	}
-	me.play = function() {
-		me.removeClass(this.__container, me.__containerPauseCss);
-		me.__container.className += ' ' + me.__containerPlayCss;
-		me.__video.play();
-	};
-	
-	me.pause = function() {
-		me.removeClass(this.__container, me.__containerPlayCss);
-		me.__container.className += ' ' + me.__containerPauseCss;
-		me.__video.pause();
-	};
-	
-	me.end = function(){
-		me.removeClass(this.__container, me.__containerPlayCss);
-		me.__video.pause();
 	}
 };
 
@@ -62,13 +46,26 @@ player.prototype.init = function(){
 	me.__playButtonSmall.addEventListener('click', function() { me.togglePlayback(); });
 	
 	me.__video.addEventListener('click', function() { me.togglePlayback(); });
+	
 	me.__video.addEventListener("timeupdate", function() { 
 		var progress = Math.floor(me.__video.currentTime) / Math.floor(me.__video.duration);
     	me.__progress.style.width = Math.floor(progress * 100) + "%";
 	});
+	
 	me.__video.addEventListener("ended", function() { 
-		me.end(); 
+		me.removeClass(me.__container, me.__containerPlayCss);
+		me.__video.pause();
 		me.__progress.style.width = '0%';
+	});
+	
+	me.__video.addEventListener("play", function() { 
+		me.removeClass(me.__container, me.__containerPauseCss);
+		me.__container.className += ' ' + me.__containerPlayCss;
+	});
+	
+	me.__video.addEventListener("pause", function() { 
+		me.removeClass(me.__container, me.__containerPlayCss);
+		me.__container.className += ' ' + me.__containerPauseCss;
 	});
 }
 
