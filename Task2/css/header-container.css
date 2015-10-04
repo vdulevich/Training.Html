@@ -32,6 +32,12 @@
 	.header-container-wrap {
 		padding:0px;
 		box-shadow:none;
+		background:none;
+	}
+	
+	.container-table--top {
+		background-color:#585858;
+		width:100%;
 	}
 	
 	.container-table--bottom {
@@ -40,10 +46,5 @@
 	
 	.container-table--bottom .column--title {
 		display:none;
-	}
-	
-	.container-table--top .column--logo {
-		background-color:#585858;
-		width:100%;
 	}
 }

@@ -30,8 +30,8 @@
     <title>Responsive design</title>
     <script type="text/javascript">
 		document.addEventListener('DOMContentLoaded', function() {
-		   var playerLarge = new player('playerLarge');
-			playerLarge.init();
+		   (new player('playerLarge')).init();
+		   (new player('playerSmall')).init();
 		}, false);
 	</script>
 </head>
@@ -127,7 +127,17 @@
                                 sed do eiusmod tempor incididunt ut
                             </div>
                             <div class="column column--video">
-                                <img src="images/player-simple-bg.jpg" style="width:100%;" />
+                                <div id="playerSmall" class="video-player">
+                                    <video 
+                                   		height="100%"
+                                        width="100%"
+                                     	poster="images/player-simple-bg.jpg"
+                                     	src="video/video.mp4">
+                                    </video>
+                                    <div class="play-button-large icon-font-button-play user-noselect">
+                                        <span class="path1"></span><span class="path2"></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

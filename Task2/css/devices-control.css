@@ -24,38 +24,14 @@
     z-index: 1;
 }
 
-.devices-control__item {
-	/*float:left;*/
-	display:inline-block;
-	padding-right:28px;
-	position:relative;
-}
-
-.devices-control__item:last-child{
-	padding-right:0px;
-}
-
-.devices-control__item--monitor {
-
-}
-
-.devices-control__item--tablet {
-	top:-40px;
-}
-
-.devices-control__item--phone {
-	top:-40px;
-}
-
 @media only screen and (max-width: 940px)
 {
 	.devices-control {
 		padding-right:30px;
-		
 	}
 }
 
-@media only screen and (max-width: 640px)
+@media only screen and (max-width: 580px)
 {
 	.devices-control:before
 	{
