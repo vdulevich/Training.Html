@@ -41,24 +41,17 @@ player.prototype.init = function(){
 	me.__progress = container.getElementsByClassName(me.__progressCss)[0];
 	
 	me.__playButtonLarge = container.getElementsByClassName(me.__playButtonLargeCss)[0];
+	if(me.__playButtonLarge) {
+		me.__playButtonLarge.addEventListener('click', function() { me.togglePlayback(); });
+	}
+	
 	me.__playButtonSmall = container.getElementsByClassName(me.__playButtonSmallCss)[0];
-	me.__playButtonLarge.addEventListener('click', function() { me.togglePlayback(); });
-	me.__playButtonSmall.addEventListener('click', function() { me.togglePlayback(); });
+	if(me.__playButtonSmall) {
+		me.__playButtonSmall.addEventListener('click', function() { me.togglePlayback(); });
+	}
 	
 	me.__video.addEventListener('click', function() { me.togglePlayback(); });
-	
-	me.__video.addEventListener("timeupdate", function() { 
-		var progress = Math.floor(me.__video.currentTime) / Math.floor(me.__video.duration);
-    	me.__progress.style.width = Math.floor(progress * 100) + "%";
-	});
-	
-	me.__video.addEventListener("ended", function() { 
-		me.removeClass(me.__container, me.__containerPlayCss);
-		me.__video.pause();
-		me.__progress.style.width = '0%';
-	});
-	
-	me.__video.addEventListener("play", function() { 
+		me.__video.addEventListener("play", function() { 
 		me.removeClass(me.__container, me.__containerPauseCss);
 		me.__container.className += ' ' + me.__containerPlayCss;
 	});
@@ -66,6 +59,21 @@ player.prototype.init = function(){
 	me.__video.addEventListener("pause", function() { 
 		me.removeClass(me.__container, me.__containerPlayCss);
 		me.__container.className += ' ' + me.__containerPauseCss;
+	});
+	
+	me.__video.addEventListener("timeupdate", function() { 
+		if(me.__progress) {
+			var progress = Math.floor(me.__video.currentTime) / Math.floor(me.__video.duration);
+			me.__progress.style.width = Math.floor(progress * 100) + "%";
+		}
+	});
+
+	me.__video.addEventListener("ended", function() { 
+		me.removeClass(me.__container, me.__containerPlayCss);
+		me.__video.pause();
+		if(me.__progress) {
+			me.__progress.style.width = '0%';
+		}
 	});
 }
 

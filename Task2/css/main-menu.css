@@ -61,7 +61,7 @@
 	}
 }
 
-@media only screen and (max-width: 640px)
+@media only screen and (max-width: 580px)
 {
 	.main-menu__item {
 		font-size:10px;

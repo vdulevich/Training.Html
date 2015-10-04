@@ -34,7 +34,6 @@
 	font-size: 4.5em;
 }
 
-
 @media only screen and (max-width: 940px)
 {
 	.presentation-container-wrap {
@@ -70,7 +69,7 @@
 	}
 }
 
-@media only screen and (max-width: 640px)
+@media only screen and (max-width: 580px)
 {
 	.presentation-container {
 		font-size:14px;

@@ -10,11 +10,9 @@
 	text-align:center;
 	margin:50px 0px;
 	font-size:43px;
-	font-family: 'Segoe WP', Helvetica, sans-serif;
 }
 
-.devices-container
-{
+.devices-container {
 	margin-bottom:100px;
 }
 
@@ -34,9 +32,9 @@
 	
 	.devices-container .one-half.column.column--devices {
 		display: inline-block;
-		float:none;
 		width:auto;
 		padding-right:0px;
+		float: none;
 	}
 	
 	.devices-container .column--list {
@@ -44,7 +42,7 @@
 	}
 }
 
-@media only screen and (max-width: 640px)
+@media only screen and (max-width: 580px)
 {
 	.devices-title {
 		font-size:20px;
