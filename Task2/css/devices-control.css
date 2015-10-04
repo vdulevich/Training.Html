@@ -17,17 +17,17 @@
     height: 6.3em;
     width: 6.3em;
     box-sizing: border-box;
-    padding-top: 2.5em;
+    padding-top: 2.6em;
     text-align: center;
     top: -38px;
-    left: -2em;
+    left: -1.8em;
     z-index: 1;
 }
 
 @media only screen and (max-width: 940px)
 {
 	.devices-control {
-		padding-right:30px;
+		padding-right:2em;
 	}
 }
 
