@@ -4,6 +4,13 @@
 	src: local('SegoeWP'), url('../fonts/SegoeWP.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'Segoe WP Bold';
+	font-weight:bold;
+	src: url('../fonts/SegoeWP-Bold.ttf');
+	src: local('SegoeWP'), url('../fonts/SegoeWP-Bold.ttf') format('truetype');
+}
+
 a {
 	cursor:pointer;
 }

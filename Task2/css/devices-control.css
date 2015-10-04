@@ -6,16 +6,16 @@
 
 .devices-control::before
 {
+	font-family: 'Segoe WP Bold', Helvetica, sans-serif;
     content: 'Its 100% Free';
     white-space: nowrap;
     position: absolute;
     background-color: #f5c506;
     border-radius: 50%;
     font-size:18px;
-	font-weight:bold;
     color: white;
-    height: 6em;
-    width: 6em;
+    height: 6.3em;
+    width: 6.3em;
     box-sizing: border-box;
     padding-top: 2.5em;
     text-align: center;
