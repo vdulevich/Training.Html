@@ -27,13 +27,6 @@
 	text-align:right;
 }
 
-@media only screen and (max-device-width: 940px)
-{
-	.header-container-wrap {
-		background:none;
-	}
-}
-
 @media only screen and (max-width: 940px)
 {
 	.header-container-wrap {
@@ -52,5 +45,12 @@
 	
 	.container-table--bottom .column--title {
 		display:none;
+	}
+}
+
+@media only screen and (max-width: 580px)
+{
+	.header-container-wrap {
+		background:none;
 	}
 }
