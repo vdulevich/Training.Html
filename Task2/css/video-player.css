@@ -36,9 +36,9 @@
 	width:100%;
 	padding:6px;
 	box-sizing:border-box;
-	background-color: black;
-    opacity: 0.6;
 	display:none;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .video-player.video-player--pause .video-panel,
