@@ -1,0 +1,28 @@
+.icon-control {
+	white-space:nowrap;
+	text-align:center;
+	text-transform:uppercase;
+	font-size: 27px;
+	background: 50% 0px no-repeat;
+}
+
+.icon-control [class^="icon-font-"] {
+	padding-bottom:15px;
+	color:#ffcc00;
+	font-size:3.2em;
+}
+
+@media only screen and (max-width: 940px)
+{
+	.icon-control {
+		font-size:23px;
+	}
+}
+
+@media only screen and (max-width: 580px)
+{
+	.icon-control {
+		font-size:14px;
+	}
+}
+

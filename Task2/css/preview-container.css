@@ -1,0 +1,39 @@
+.preview-container
+{
+	max-height:232px;
+}
+
+.preview-container .column--description {
+	color:white;
+	background-color:#ec9e03;
+	padding:3%;
+}
+
+.preview-container .column--video {
+	height:220px;
+	font-size:14px;
+}
+
+@media only screen and (max-width: 940px)
+{
+	.preview-container {
+		padding:10px;
+		box-sizing:border-box;
+	}
+	
+	.preview-container .column--video {
+		height:230px;
+	}
+}
+
+@media only screen and (max-width: 580px)
+{
+	.preview-container {
+		padding:5px;
+	}
+	
+	.preview-container .column--video {
+		height:96px;
+		font-size:10px;
+	}
+}

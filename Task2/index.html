@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="no-js" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="css/container.css" />
+    <link type="text/css" rel="stylesheet" href="css/icomoon.css" />
+    <link type="text/css" rel="stylesheet" href="css/index.css" />  
+    <link type="text/css" rel="stylesheet" href="css/plus-reference.css" />
+    <link type="text/css" rel="stylesheet" href="css/utils.css" />
+        
+    <link type="text/css" rel="stylesheet" href="css/header-container.css" />
+    <link type="text/css" rel="stylesheet" href="css/main-logo.css" />
+    <link type="text/css" rel="stylesheet" href="css/main-menu.css" />
+    <link type="text/css" rel="stylesheet" href="css/main-title.css" />
+    <link type="text/css" rel="stylesheet" href="css/video-player.css" />
+    <link type="text/css" rel="stylesheet" href="css/icon-container.css" />
+    <link type="text/css" rel="stylesheet" href="css/icon-control.css" />
+    <link type="text/css" rel="stylesheet" href="css/presentation-container.css" />
+    <link type="text/css" rel="stylesheet" href="css/preview-container.css" />
+    <link type="text/css" rel="stylesheet" href="css/devices-container.css" />
+    <link type="text/css" rel="stylesheet" href="css/devices-control.css" />
+    <link type="text/css" rel="stylesheet" href="css/devices-menu.css" />
+    <link type="text/css" rel="stylesheet" href="css/footer-container.css" />
+
+   
+    <title>Responsive design</title>
+    <script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function() {
+		   (new player('playerLarge')).init();
+		   (new player('playerSmall')).init();
+		}, false);
+	</script>
+</head>
+<body>
+	<div class="base-container">
+        <div class="header-container-wrap">
+        	<div class="base-container-wrap">
+                <div class="container-table container-table--top">
+                    <div class="column column--logo">
+                        <div class="main-logo">
+                            TheYalow
+                            <span class="main-logo__subtitle">Craft By Css author.com</span>
+                        </div>	
+                    </div>
+                    <div class="column column--menu">
+                        <ul class="main-menu main-menu--shadow">
+                            <li class="main-menu__item icon-font-person"><a>About us</a></li>
+                            <li class="main-menu__item icon-font-services"><a>Services</a></li>
+                            <li class="main-menu__item icon-font-letter"><a>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container-table container-table--bottom">
+                    <div class="column column--video">
+                            <div id="playerLarge" class="video-player">
+                                <video height="100%" 
+                                 width="100%" 
+                                 poster="images/palyer-bg.jpg"
+                                 src="video/video.mp4">
+                                </video>
+                                <div class="play-button-large icon-font-button-play user-noselect">
+                                	<span class="path1"></span><span class="path2"></span>
+                                </div>
+                                <div class="video-panel">
+                                    <div class="container-table container-table--middle">
+                                        <div class="column">
+                                            <div class="play-button-small icon-font-pause"></div>
+                                        </div>
+                                        <div class="columns twelve user-noselect">
+                                            <div class="video-progress">
+                                                <div class="video-progress-bar">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                     <div class="column column--title">
+                        <div class="main-title">
+                            The cool
+                            <div class="main-title__subtitle">The minimal</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="icon-container-wrap">
+        	<div class="base-container-wrap">
+                <div class="container icon-container">
+               		<div class="row">
+                    	<div class="one-third column">
+                        	<div class="icon-control">
+                            	<div class="icon-font-cloud"></div>
+                            	Better design
+                            </div>
+                        </div>
+                    	<div class="one-third column">
+							<div class="icon-control">
+                                <div class="icon-font-leaf"></div>
+                                Customize
+                            </div>
+                        </div>
+                        <div class="one-third column">
+                        	<div class="icon-control">
+                            	<div class="icon-font-plain"></div>
+                            	Its free
+                        	</div>
+                        </div>
+                  	</div>
+                </div>
+        	</div>
+        </div>
+        <div class="presentation-container-wrap">
+            <div class="base-container-wrap">
+                <div class="presentation-title presentation-title--padding">Lorem ipsum dolor sit amet</div>
+                <div class="container-table presentation-container">
+                	<div class="nine columns column--left">
+                    	<div class="container-table preview-container">
+                            <div class="seven columns column--description plus-reference">
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit, 
+                                sed do eiusmod tempor incididunt ut
+                            </div>
+                            <div class="column column--video">
+                                <div id="playerSmall" class="video-player">
+                                    <video 
+                                   		height="100%"
+                                        width="100%"
+                                     	poster="images/player-simple-bg.jpg"
+                                     	src="video/video.mp4">
+                                    </video>
+                                    <div class="play-button-large icon-font-button-play user-noselect">
+                                        <span class="path1"></span><span class="path2"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="three columns column--right plus-reference">
+                        <div class="icon-font-twitter"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="devices-container-wrap">
+            <div class="base-container-wrap">
+                <div class="devices-title">Lorem ipsum dolor sit amet</div>
+                <div class="container devices-container">
+                    <div class="column one-half column--devices">
+                        <div class="devices-control">
+                            <img src="images/devices.png" width="100%"/>
+                        </div>
+                    </div>
+                    <div class="column one-half column--list">
+                        <ul class="devices-menu">
+                            <li>Sed ut perspiciatis unde omnis</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing </li>
+                            <li>Sed ut perspiciatis unde omnis</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing </li>
+                        </ul>
+                    </div>
+                </div>
+        	</div>
+        </div>
+        <div class="footer-container">
+        	<div class="main-logo main-logo--footer">
+            	TheYalow
+            </div>
+        </div>
+    </div>
+</body>
+</html>

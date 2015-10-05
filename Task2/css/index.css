@@ -1,0 +1,44 @@
+@font-face {
+	font-family: 'Segoe WP';
+	src: url('../fonts/SegoeWP.ttf');
+	src: local('SegoeWP'), url('../fonts/SegoeWP.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Segoe WP Bold';
+	font-weight:bold;
+	src: url('../fonts/SegoeWP-Bold.ttf');
+	src: local('SegoeWP'), url('../fonts/SegoeWP-Bold.ttf') format('truetype');
+}
+
+a {
+	cursor:pointer;
+}
+
+body {
+	font-family:'Segoe WP', Helvetica, sans-serif;
+}
+
+.base-container {
+	margin:0px auto;
+	min-width:320px;
+}
+
+.base-container-wrap {
+	max-width:1000px;
+	margin:0px auto;
+	padding:0px 20px;
+}
+
+@media only screen and (max-width: 940px)
+{
+	.base-container-wrap {
+		padding:0px;
+	}
+}
+
+
+
+
+
+

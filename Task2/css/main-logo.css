@@ -1,0 +1,58 @@
+.main-logo{
+	background-repeat:no-repeat;
+	background-position:10px 50%;
+	background-image:url(../images/logo-main.svg);
+	background-size:contain;
+	font-size:41px;
+	text-transform:uppercase;
+	color:white;
+	padding:10px 10px 10px 80px;
+	font-style:italic;
+}
+
+.no-svg .main-logo{
+	background-image:url(../images/logo-main.png);
+	padding:20px 10px 20px 100px;
+}
+
+.main-logo span {
+	white-space:nowrap;
+}
+
+.main-logo__subtitle {
+	font-size:0.3em;
+	font-style:normal;
+}
+
+.main-logo.main-logo--footer
+{
+	font-size: 25px;
+    padding: 5px 0px 5px 60px;
+    margin: 0px auto;
+    display: inline-block;
+}
+
+.no-svg .main-logo.main-logo--footer{
+	background-image:url(../images/logo-main-footer.png);
+}
+
+@media only screen and (max-width: 940px)
+{
+	.main-logo {
+		font-size:19px;
+		padding-left:60px;
+	}
+	
+	.main-logo__subtitle {
+		display:none;	
+	}
+}
+
+@media only screen and (max-width: 580px)
+{
+	.main-logo {
+		font-size: 10px;
+    	padding-left: 40px;
+		background-position:6px 50%;
+	}
+}
