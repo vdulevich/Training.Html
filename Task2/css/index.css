@@ -19,12 +19,6 @@ body {
 	font-family:'Segoe WP', Helvetica, sans-serif;
 }
 
-.clear-fix::after {
-	content:'';
-	display:block;
-	clear:both;
-}
-
 .base-container {
 	margin:0px auto;
 	min-width:320px;
