@@ -4,7 +4,6 @@
 	background-image:url(../images/logo-main.svg);
 	background-size:contain;
 	font-size:41px;
-	font-family:'Segoe WP', Helvetica, sans-serif;
 	text-transform:uppercase;
 	color:white;
 	padding:10px 10px 10px 80px;
@@ -25,12 +24,16 @@
 	font-style:normal;
 }
 
-.main-logo--footer
+.main-logo.main-logo--footer
 {
 	font-size: 25px;
     padding: 5px 0px 5px 60px;
     margin: 0px auto;
-    display: inline-block;	
+    display: inline-block;
+}
+
+.no-svg .main-logo.main-logo--footer{
+	background-image:url(../images/logo-main-footer.png);
 }
 
 @media only screen and (max-width: 940px)
