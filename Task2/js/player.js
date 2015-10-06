@@ -6,6 +6,7 @@ function player(id) {
 	me.__playButtonSmall = null;
 	me.__container = null;
 	me.__progress = null;
+	me.__progressBar = null;
 	
 	me.__containerPlayCss = 'video-player--play';
 	me.__containerPauseCss = 'video-player--pause';
@@ -14,7 +15,8 @@ function player(id) {
 	me.__playButtonSmallCss = 'play-button-small';
 	me.__playButtonSmallPauseCss = 'icon-font-pause';
 	me.__playButtonSmallPlayCss = 'icon-font-play';
-	me.__progressCss = 'video-progress-bar';
+	me.__progressCss = 'video-progress';
+	me.__progressBarCss = 'video-progress-bar';
 	
 	me.replaceClass = function(el, className, newClassName) {
 		el.className = el.className.replace(className, newClassName);
@@ -39,8 +41,9 @@ player.prototype.init = function(){
 	me.__container = container;
 	me.__video = container.getElementsByTagName('video')[0];
 	me.__progress = container.getElementsByClassName(me.__progressCss)[0];
-	
+	me.__progressBar = container.getElementsByClassName(me.__progressBarCss)[0];
 	me.__playButtonLarge = container.getElementsByClassName(me.__playButtonLargeCss)[0];
+	
 	if(me.__playButtonLarge) {
 		me.__playButtonLarge.addEventListener('click', function() { me.togglePlayback(); });
 	}
@@ -50,8 +53,17 @@ player.prototype.init = function(){
 		me.__playButtonSmall.addEventListener('click', function() { me.togglePlayback(); });
 	}
 	
+	if(me.__progress) {
+		me.__progress.addEventListener('click', function(e) {
+			var totalWidth = this.getClientRects()[0].width,
+				currentWidth = e.offsetX,
+				percentWidth = currentWidth / totalWidth * 100;
+			me.__video.currentTime = me.__video.duration / 100 * percentWidth;
+		});
+	}
+	
 	me.__video.addEventListener('click', function() { me.togglePlayback(); });
-		me.__video.addEventListener("play", function() { 
+	me.__video.addEventListener("play", function() { 
 		me.removeClass(me.__container, me.__containerPauseCss);
 		me.__container.className += ' ' + me.__containerPlayCss;
 	});
@@ -62,9 +74,9 @@ player.prototype.init = function(){
 	});
 	
 	me.__video.addEventListener("timeupdate", function() { 
-		if(me.__progress) {
+		if(me.__progressBar) {
 			var progress = Math.floor(me.__video.currentTime) / Math.floor(me.__video.duration);
-			me.__progress.style.width = Math.floor(progress * 100) + "%";
+			me.__progressBar.style.width = Math.floor(progress * 100) + "%";
 		}
 	});
 
@@ -72,7 +84,7 @@ player.prototype.init = function(){
 		me.removeClass(me.__container, me.__containerPlayCss);
 		me.__video.pause();
 		if(me.__progress) {
-			me.__progress.style.width = '0%';
+			me.__progressBar.style.width = '0%';
 		}
 	});
 }

@@ -64,7 +64,6 @@
 
 .play-button-small {
 	cursor: pointer;
-    font-size: 1.5em;
 }
 
 .video-player.video-player--pause .play-button-small:before{
@@ -81,6 +80,7 @@
 	width:100%;
 	background-color: rgb(150,150,150);
 	background-color: rgba(150,150,150,0.5);
+	cursor:pointer;
 }
 
 .video-progress-bar {
