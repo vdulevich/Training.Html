@@ -1,0 +1,15 @@
+.plus-reference {
+	position:relative;
+}
+
+.plus-reference::after {
+	content:'+';
+	cursor:pointer;
+	font-size:1.2em;
+	font-family:'Segoe WP', Helvetica, sans-serif;
+	display:block;
+	position:absolute;
+	bottom: 4px;
+    right: 12px;
+	color:white;
+}

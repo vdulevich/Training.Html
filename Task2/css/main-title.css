@@ -1,0 +1,11 @@
+.main-title {
+	text-transform:uppercase;
+	text-align:center;
+	display:inline-block;
+	font-size: 63px;
+	color:white;
+}
+
+.main-title__subtitle {
+	color:#f5c506;
+}

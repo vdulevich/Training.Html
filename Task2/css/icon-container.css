@@ -1,0 +1,24 @@
+.icon-container-wrap {
+	background-image:url(../images/icon-container-bg.jpg);
+}
+
+.icon-container .column
+{
+	border-style:solid;
+	border-color:#ececeb;
+	border-right-width:1px;
+	padding:40px 0px;
+}
+
+.icon-container .column:first-child {
+	border-left-width:1px;
+}
+
+@media only screen and (max-width: 940px)
+{
+	.icon-container .column {
+		border:none;
+	}
+}
+
+
