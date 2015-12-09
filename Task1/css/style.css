@@ -60,7 +60,8 @@ a
 .main-container
 {
     margin: 0 auto;
-	min-width:393px;
+	min-width:320px;
+	position:relative;
 }
 
 .center-container
@@ -98,13 +99,12 @@ a
 
 @media only screen and (max-width: 532px)
 {
-    .header-container .header-container-right,
-    .header-container .header-container-left
+	.header-container .header-container-right
     {
-        display: block;
-
-        text-align: left;
-    }
+		width:30px;
+		height:30px;
+		padding-right: 10px;
+	}
 }
 
 .sitename-control
@@ -149,6 +149,47 @@ a
 {
     color: #e4551d;
     background: url(../images/head-menui-tem-bg.png) 50% 0 no-repeat;
+}
+
+.header-container .menu-button{
+	display:none;
+}
+
+@media only screen and (max-width: 532px)
+{
+	.header-container .menu-button{
+		display:block;
+	}
+	
+	.mainmenu-control {
+		position:absolute;
+		display:block;
+		height:100%;
+		right:0px;
+		top:0px;
+		z-index:1;
+		display:none;
+		background-color:black;
+		opacity:0.9;
+		width:0%;
+		-webkit-transition: width 3s ease-in;
+		-moz-transition: width 3s ease-in;
+		-o-transition: width 3s ease-in;
+		transition: width 3s ease-in;
+	}
+	
+	.mainmenu-control li {
+		display:block;
+	}
+	
+	.mainmenu-control li a:hover {
+		background:none;
+	}
+	
+	.mainmenu-control.show {
+		display:block;
+		width:50%;
+	}
 }
 
 .banner-container
