@@ -158,8 +158,8 @@ a
 .menu-close{
 	display:none;
 	position:absolute;
-	top:10px;
-	left:5px;
+	top:12px;
+	left:10px;
 	border-radius:50%;
 	width:30px;
 	height:30px;
@@ -170,11 +170,11 @@ a
 
 @media only screen and (max-width: 532px)
 {
-	.mainmenu-control .menu-open{
+	.menu-open{
 		display:block;
 	}
 	
-	.mainmenu-control .menu-close{
+	.menu-close{
 		display:block;
 	}
 		
@@ -189,10 +189,6 @@ a
 		background-color:black;
 		opacity:0.9;
 		width:0%;
-		-webkit-transition: width 3s ease-in;
-		-moz-transition: width 3s ease-in;
-		-o-transition: width 3s ease-in;
-		transition: width 3s ease-in;
 	}
 	
 	.mainmenu-control li {
@@ -205,7 +201,7 @@ a
 	
 	.mainmenu-control.show {
 		display:block;
-		width:50%;
+		width:60%;
 	}
 }
 
