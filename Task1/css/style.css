@@ -151,11 +151,11 @@ a
     background: url(../images/head-menui-tem-bg.png) 50% 0 no-repeat;
 }
 
-.mainmenu-control .menu-open{
+.menu-open{
 	display:none;
 }
 
-.mainmenu-control .menu-close{
+.menu-close{
 	display:none;
 	position:absolute;
 	top:10px;
@@ -164,7 +164,6 @@ a
 	width:30px;
 	height:30px;
 	text-align: center;
-    display: block;
     line-height: 30px;
     background: white;
 }
