@@ -8,13 +8,15 @@
 <link type="text/css" rel="stylesheet" href="css/normalize.css" />
 </head>
 <body>
-	<div class="main-container">
+	<div class="main-container" onclick="document.getElementsByClassName('mainmenu-control')[0].classList.remove('show');">
         <div class="header-container center-container">
         	<div class="header-container-left">
            		<div class="sitename-control"><a>Site Name</a></div>
             </div>
             <div class="header-container-right">
-                <ul class="mainmenu-control">
+            	<a class="menu-button button" onclick="document.getElementsByClassName('mainmenu-control')[0].classList.add('show');
+                 event.stopPropagation();">Menu</a>
+                <ul class="mainmenu-control" onclick="event.stopPropagation();">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
