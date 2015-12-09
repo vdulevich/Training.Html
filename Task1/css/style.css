@@ -61,7 +61,6 @@ a
 {
     margin: 0 auto;
 	min-width:320px;
-	position:relative;
 }
 
 .center-container
@@ -127,6 +126,7 @@ a
 	white-space: nowrap;
 
     color: #637f83;
+	position:relative;
 }
 
 .mainmenu-control li
@@ -151,18 +151,36 @@ a
     background: url(../images/head-menui-tem-bg.png) 50% 0 no-repeat;
 }
 
-.header-container .menu-button{
+.mainmenu-control .menu-open{
 	display:none;
+}
+
+.mainmenu-control .menu-close{
+	display:none;
+	position:absolute;
+	top:10px;
+	left:5px;
+	border-radius:50%;
+	width:30px;
+	height:30px;
+	text-align: center;
+    display: block;
+    line-height: 30px;
+    background: white;
 }
 
 @media only screen and (max-width: 532px)
 {
-	.header-container .menu-button{
+	.mainmenu-control .menu-open{
 		display:block;
 	}
 	
+	.mainmenu-control .menu-close{
+		display:block;
+	}
+		
 	.mainmenu-control {
-		position:absolute;
+		position:fixed;
 		display:block;
 		height:100%;
 		right:0px;

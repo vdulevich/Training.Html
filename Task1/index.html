@@ -14,9 +14,10 @@
            		<div class="sitename-control"><a>Site Name</a></div>
             </div>
             <div class="header-container-right">
-            	<a class="menu-button button" onclick="document.getElementsByClassName('mainmenu-control')[0].classList.add('show');
+            	<a class="menu-open button" onclick="document.getElementsByClassName('mainmenu-control')[0].classList.add('show');
                  event.stopPropagation();">Menu</a>
                 <ul class="mainmenu-control" onclick="event.stopPropagation();">
+                	<a class="menu-close" onclick="document.getElementsByClassName('mainmenu-control')[0].classList.remove('show');">✖</a>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
