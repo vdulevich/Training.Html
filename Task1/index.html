@@ -8,23 +8,27 @@
 <link type="text/css" rel="stylesheet" href="css/normalize.css" />
 </head>
 <body>
-	<div class="main-container" onclick="document.getElementsByClassName('mainmenu-control')[0].classList.remove('show');">
+	<div class="main-container" onclick="document.getElementsByClassName('mainmenu-control-wrap')[0].classList.remove('show');">
         <div class="header-container center-container">
         	<div class="header-container-left">
            		<div class="sitename-control"><a>Site Name</a></div>
             </div>
             <div class="header-container-right">
-            	<a class="menu-open button" onclick="document.getElementsByClassName('mainmenu-control')[0].classList.add('show');
-                 event.stopPropagation();">Menu</a>
-                <ul class="mainmenu-control" onclick="event.stopPropagation();">
-                	<a class="menu-close" onclick="document.getElementsByClassName('mainmenu-control')[0].classList.remove('show');">✖</a>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            	<a class="mainmenu-open button" onclick="document.getElementsByClassName('mainmenu-control-wrap')[0].classList.add('show'); event.stopPropagation();">Menu</a>
+            	<div class="mainmenu-control-wrap" onclick="event.stopPropagation();">
+                    <div class="mainmenu-title-container">
+                    	<a class="mainmenu-close" onclick="document.getElementsByClassName('mainmenu-control-wrap')[0].classList.remove('show');">✖</a>
+                        <a class="mainmenu-title">Site Menu</a>
+                    </div>
+                    <ul class="mainmenu-control" onclick="event.stopPropagation();">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="banner-container">
