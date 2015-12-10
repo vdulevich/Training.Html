@@ -6,6 +6,7 @@
 <title>Untitled Document</title>
 <link type="text/css" rel="stylesheet" href="css/style.css" />
 <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+<link type="text/css" rel="stylesheet" href="css/icomoon.css" />
 </head>
 <body>
 	<div class="main-container" onclick="document.getElementsByClassName('mainmenu-control-wrap')[0].classList.remove('show');">
@@ -14,10 +15,10 @@
            		<div class="sitename-control"><a>Site Name</a></div>
             </div>
             <div class="header-container-right">
-            	<a class="mainmenu-open button" onclick="document.getElementsByClassName('mainmenu-control-wrap')[0].classList.add('show'); event.stopPropagation();"></a>
+            	<a class="mainmenu-open button icon-menu" onclick="document.getElementsByClassName('mainmenu-control-wrap')[0].classList.add('show'); event.stopPropagation();"></a>
             	<div class="mainmenu-control-wrap" onclick="event.stopPropagation();">
                     <div class="mainmenu-title-container">
-                    	<a class="mainmenu-close" onclick="document.getElementsByClassName('mainmenu-control-wrap')[0].classList.remove('show');">✖</a>
+                    	<a class="mainmenu-close icon-cross" onclick="document.getElementsByClassName('mainmenu-control-wrap')[0].classList.remove('show');"></a>
                         <a class="mainmenu-title">Site Menu</a>
                     </div>
                     <ul class="mainmenu-control" onclick="event.stopPropagation();">

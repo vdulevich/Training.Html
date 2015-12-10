@@ -159,18 +159,7 @@ a
 	display:none;
     text-align: center;
     border-radius: 4px;
-	vertical-align:middle;
 	padding: 10px;
-}
-
-.mainmenu-open:before {
-	content: "";
-	display:inline-block;
-	width: 1em;
-	height: 0.140em;
-	border-top: 0.380em double;
-	border-bottom: 0.130em solid;
-	border-color:#fff;
 }
 
 .mainmenu-title-container {
@@ -189,7 +178,7 @@ a
 	width:30px;
 	height:30px;
 	text-align: center;
-    line-height: 30px;
+    line-height: 30px !important;
     background: white;
 	display:block;
 }
@@ -201,8 +190,8 @@ a
 
 @media only screen and (max-width: 532px)
 {
-	.mainmenu-open{
-		display:table-cell;
+	.mainmenu-open {
+		display:block;
 	}
 	
 	.mainmenu-title-container {
