@@ -157,6 +157,9 @@ a
 
 .mainmenu-open{
 	display:none;
+	padding: 5px;
+    text-align: center;
+    border-radius: 4px;
 }
 
 .mainmenu-title-container {
