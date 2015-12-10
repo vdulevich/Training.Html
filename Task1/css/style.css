@@ -78,6 +78,14 @@ a
     padding: 15px 0px;
 }
 
+@media only screen and (max-width: 532px)
+{
+	.header-container
+	{
+		padding: 10px 0px;
+	}
+}
+
 .header-container .header-container-right,
 .header-container .header-container-left
 {
@@ -126,61 +134,69 @@ a
 	white-space: nowrap;
 
     color: #637f83;
-	position:relative;
 }
 
 .mainmenu-control li
 {
     display: inline-block;
+	padding: 15px 10px 5px 10px;
 }
 
 .mainmenu-control li a
 {
     display: inline-block;
-
-    padding: 15px 10px 5px 10px;
-
     text-decoration: inherit;
-
     color: inherit;
 }
 
-.mainmenu-control li a:hover
+.mainmenu-control li:hover
 {
     color: #e4551d;
     background: url(../images/head-menui-tem-bg.png) 50% 0 no-repeat;
 }
 
-.menu-open{
+.mainmenu-open{
 	display:none;
 }
 
-.menu-close{
+.mainmenu-title-container {
 	display:none;
-	position:absolute;
-	top:12px;
-	left:10px;
+	padding:11px;
+}
+
+.mainmenu-title{
+	line-height:30px;
+	color:#e4551d;
+	font-size:20px;
+}
+
+.mainmenu-close {
 	border-radius:50%;
 	width:30px;
 	height:30px;
 	text-align: center;
     line-height: 30px;
     background: white;
+	display:block;
+}
+
+.mainmenu-title-container .mainmenu-close
+{
+	position:absolute;
 }
 
 @media only screen and (max-width: 532px)
 {
-	.menu-open{
+	.mainmenu-open{
 		display:block;
 	}
 	
-	.menu-close{
+	.mainmenu-title-container {
 		display:block;
 	}
-		
-	.mainmenu-control {
+	
+	.mainmenu-control-wrap {
 		position:fixed;
-		display:block;
 		height:100%;
 		right:0px;
 		top:0px;
@@ -190,16 +206,17 @@ a
 		opacity:0.9;
 		width:0%;
 	}
-	
-	.mainmenu-control li {
+		
+	.mainmenu-control-wrap .mainmenu-control li {
 		display:block;
+		padding: 10px;
 	}
 	
-	.mainmenu-control li a:hover {
-		background:none;
+	.mainmenu-control-wrap .mainmenu-control li:hover {
+		background:gray;
 	}
 	
-	.mainmenu-control.show {
+	.mainmenu-control-wrap.show {
 		display:block;
 		width:60%;
 	}
