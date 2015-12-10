@@ -157,9 +157,20 @@ a
 
 .mainmenu-open{
 	display:none;
-	padding: 5px;
     text-align: center;
     border-radius: 4px;
+	vertical-align:middle;
+	padding: 10px;
+}
+
+.mainmenu-open:before {
+	content: "";
+	display:inline-block;
+	width: 1em;
+	height: 0.140em;
+	border-top: 0.380em double;
+	border-bottom: 0.130em solid;
+	border-color:#fff;
 }
 
 .mainmenu-title-container {
@@ -191,7 +202,7 @@ a
 @media only screen and (max-width: 532px)
 {
 	.mainmenu-open{
-		display:block;
+		display:table-cell;
 	}
 	
 	.mainmenu-title-container {
