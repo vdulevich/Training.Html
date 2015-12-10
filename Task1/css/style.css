@@ -160,7 +160,6 @@ a
 }
 
 .mainmenu-title-container {
-	display:none;
 	padding:11px;
 }
 
@@ -194,18 +193,6 @@ a
 	.mainmenu-title-container {
 		display:block;
 	}
-	
-	.mainmenu-control-wrap {
-		position:fixed;
-		height:100%;
-		right:0px;
-		top:0px;
-		z-index:1;
-		display:none;
-		background-color:black;
-		opacity:0.9;
-		width:0%;
-	}
 		
 	.mainmenu-control-wrap .mainmenu-control li {
 		display:block;
@@ -216,8 +203,23 @@ a
 		background:gray;
 	}
 	
+	.mainmenu-control-wrap {
+		position:fixed;
+		height:100%;
+		right:0px;
+		top:0px;
+		z-index:1;
+		background-color:black;
+		opacity:0.9;
+		width:0%;
+		-webkit-transition:width 0.1s ease;
+		-moz-transition:width 0.1s ease;
+		-ms-transition:width 0.1s ease;
+		-o-transition:width 0.1s ease;
+		transition:width 0.1s ease;
+	}
+	
 	.mainmenu-control-wrap.show {
-		display:block;
 		width:60%;
 	}
 }
